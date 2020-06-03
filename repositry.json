@@ -1,5 +1,17 @@
 {
     "apps": [
+{
+            "name": "Mozilla Firefox for PC Windows",
+            "licence": "(Free)",
+            "rating": "10",
+            "icon": "mozilla-firefox-icon.png",
+            "version": "68.0.0.0.-2",
+            "id": "download_mozilla-firefox",
+            "category": "browsers",
+            "fname": "Firefox_Installer.exe",
+            "size": 319664,
+            "silent": " -ms -ma"
+        },
         {
             "name": "Ares Galaxy",
             "licence": "(Free)",
