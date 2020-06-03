@@ -6387,7 +6387,7 @@
         {
             "name": "Mozilla Firefox for PC Windows",
             "licence": "(Free)",
-            "rating": "8",
+            "rating": "10",
             "icon": "mozilla-firefox-icon.png",
             "version": "68.0.0.0.-2",
             "id": "download_mozilla-firefox",
@@ -6639,7 +6639,7 @@
         {
             "name": "Mozilla Firefox 64-bit for PC Windows",
             "licence": "(Free)",
-            "rating": "8",
+            "rating": "10",
             "icon": "mozilla-firefox-64-icon.png",
             "version": "68.0-beta-14",
             "id": "download_mozilla-firefox-64",
