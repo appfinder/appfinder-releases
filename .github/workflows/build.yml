@@ -115,4 +115,4 @@ jobs:
         file: "**/appfinder_*_x64_en-US.ms*"
         tags: true
         draft: false
-        release_id: ${{steps.create-public-release.outputs}}
+        release_id: steps.create-public-release.outputs
