@@ -113,6 +113,6 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         file: "**/appfinder_*_x64_en-US.ms*"
-        tags: true
+        tags: false
         draft: false
         release_id: steps.create-public-release.outputs
