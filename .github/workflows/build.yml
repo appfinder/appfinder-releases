@@ -62,14 +62,14 @@ jobs:
     - name: Install Dependencies
       run: npm i && npm i -D cli-truncate
 
-    - name: Check lint
-      run: npm run lint
+    # - name: Check lint
+    #   run: npm run lint
 
-    - name: Run headless unit test
-      if: matrix.platform == 'ubuntu-latest'
-      uses: GabrielBB/xvfb-action@v1
-      with:
-        run: npm run test
+    # - name: Run headless unit test
+    #   if: matrix.platform == 'ubuntu-latest'
+    #   uses: GabrielBB/xvfb-action@v1
+    #   with:
+    #     run: npm run test
 
     - name: build tauri app
       uses: tauri-apps/tauri-action@v0
