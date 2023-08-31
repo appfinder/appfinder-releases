@@ -71,9 +71,48 @@ jobs:
     #   with:
     #     run: npm run test
 
+
+    - name: Get Package Version
+      id: get_version
+      run: echo "##[set-output name=version]$(node -p "require('./package.json').version")"
+
+    
+    - name: Use Package Version in Another Step
+      run: echo "The package version is ${{ steps.get_version.outputs.version }}"
+  
+
+
     - name: build tauri app
       uses: tauri-apps/tauri-action@v0
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         TAURI_PRIVATE_KEY: ${{ secrets.TAURI_PRIVATE_KEY }}
         TAURI_KEY_PASSWORD: ${{ secrets.TAURI_KEY_PASSWORD }}
+
+    - name: create public release
+      id: create-public-release
+      uses: actions/github-script@v6
+      with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const { data } = await github.rest.repos.createRelease({
+              owner: 'appfinder',
+              repo: 'app-finder-releases',
+              tag_name: "AppFinder-v${{steps.get_version.outputs.version}}",
+              name: `AppFinder-v${{steps.get_version.outputs.version}}`,
+              body: 'Take a look at the assets to download and install this app.',
+              draft: false,
+              prerelease: false
+            })
+            return data.id
+    
+
+    - name: Upload files to release
+      uses: xresloader/upload-to-github-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        file: "**/appfinder_*_x64_en-US.ms*"
+        tags: true
+        draft: false
+        release_id: ${{steps.create-public-release.outputs}}
