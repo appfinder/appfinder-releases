@@ -10,7 +10,8 @@
         },
         "x86": "https://app-updates.agilebits.com/download/OPW4"
       },
-      "version": "latest-4.x"
+      "version": "latest-4.x",
+      "icon":"https://static.filehorse.com/icons/firewalls-and-security/1password-icon-32.png"
     },
     "7zip": {
       "installer": {
