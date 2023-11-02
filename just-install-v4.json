@@ -8,10 +8,9 @@
         "options": {
           "extension": ".exe"
         },
-        "x86": "https://app-updates.agilebits.com/download/OPW4"
+        "x86": "https://c.1password.com/dist/1P/win6/1PasswordSetup-7.9.835.exe"
       },
-      "version": "latest-4.x",
-      "icon":"https://static.filehorse.com/icons/firewalls-and-security/1password-icon-32.png"
+      "version": "7.9.835"
     },
     "7zip": {
       "installer": {
@@ -303,9 +302,9 @@
     "bootnext": {
       "installer": {
         "kind": "msi",
-        "x86_64": "https://ci.appveyor.com/api/buildjobs/b7uinwkoc8bk2s7m/artifacts/installer%2Fbin%2Fx64%2FRelease%2Fbootnext.msi"
+        "x86_64": "https://ci.appveyor.com/api/buildjobs/u9hukwbct9hfitfj/artifacts/installer%2Fbin%2Fx64%2FRelease%2Fbootnext.msi"
       },
-      "version": "1.0.72"
+      "version": "1.0.73"
     },
     "brackets": {
       "installer": {
@@ -1729,9 +1728,9 @@
             "/norestart"
           ]
         },
-        "x86": "https://downloads.plex.tv/plex-media-server-new/1.32.6.7557-1cf77d501/windows/PlexMediaServer-1.32.6.7557-1cf77d501-x86.exe"
+        "x86": "https://downloads.plex.tv/plex-media-server-new/1.32.7.7621-871adbd44/windows/PlexMediaServer-1.32.7.7621-871adbd44-x86.exe"
       },
-      "version": "1.32.6.7557"
+      "version": "1.32.7.7621"
     },
     "postman": {
       "installer": {
@@ -1981,9 +1980,9 @@
     "signal": {
       "installer": {
         "kind": "nsis",
-        "x86": "https://updates.signal.org/desktop/signal-desktop-win-6.36.0.exe"
+        "x86": "https://updates.signal.org/desktop/signal-desktop-win-6.37.0.exe"
       },
-      "version": "6.36.0"
+      "version": "6.37.0"
     },
     "simplenote": {
       "installer": {
@@ -2557,21 +2556,23 @@
         "options": {
           "arguments": [
             "{{.installer}}",
-            "--vivaldi-silent"
+            "--vivaldi-silent",
+            "--do-not-launch-chrome",
+            "--vivaldi-update"
           ]
         },
-        "x86": "https://downloads.vivaldi.com/stable/Vivaldi.6.4.3160.34.exe",
-        "x86_64": "https://downloads.vivaldi.com/stable/Vivaldi.6.4.3160.34.x64.exe"
+        "x86": "https://downloads.vivaldi.com/stable/Vivaldi.6.4.3160.41.exe",
+        "x86_64": "https://downloads.vivaldi.com/stable/Vivaldi.6.4.3160.41.x64.exe"
       },
-      "version": "6.4.3160.34"
+      "version": "6.4.3160.41"
     },
     "vlc": {
       "installer": {
         "kind": "msi",
-        "x86": "https://download.videolan.org/pub/videolan/vlc/last/win32/vlc-3.0.18-win32.msi",
-        "x86_64": "https://download.videolan.org/pub/videolan/vlc/last/win64/vlc-3.0.18-win64.msi"
+        "x86": "https://download.videolan.org/pub/videolan/vlc/last/win32/vlc-3.0.20-win32.msi",
+        "x86_64": "https://download.videolan.org/pub/videolan/vlc/last/win64/vlc-3.0.20-win64.msi"
       },
-      "version": "3.0.18"
+      "version": "3.0.20"
     },
     "voicemeeter": {
       "installer": {
