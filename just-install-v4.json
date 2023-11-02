@@ -2557,9 +2557,7 @@
         "options": {
           "arguments": [
             "{{.installer}}",
-            "--vivaldi-silent",
-            "--do-not-launch-chrome",
-            "--vivaldi-update"
+            "--vivaldi-silent"
           ]
         },
         "x86": "https://downloads.vivaldi.com/stable/Vivaldi.6.4.3160.34.exe",
