@@ -184,10 +184,10 @@
     "audacity": {
       "installer": {
         "kind": "innosetup",
-        "x86": "https://github.com/audacity/audacity/releases/download/Audacity-3.0.5/audacity-win-3.0.5-32bit.exe",
-        "x86_64": "https://github.com/audacity/audacity/releases/download/Audacity-3.0.5/audacity-win-3.0.5-64bit.exe"
+        "x86": "https://github.com/audacity/audacity/releases/download/Audacity-3.4.0/audacity-win-3.4.0-32bit.exe",
+        "x86_64": "https://github.com/audacity/audacity/releases/download/Audacity-3.4.0/audacity-win-3.4.0-64bit.exe"
       },
-      "version": "3.0.5"
+      "version": "3.4.0"
     },
     "autohotkey": {
       "installer": {
@@ -288,9 +288,9 @@
             "/S"
           ]
         },
-        "x86": "https://download.bleachbit.org/BleachBit-4.4.2-setup.exe"
+        "x86": "https://download.bleachbit.org/BleachBit-4.6.0-setup.exe"
       },
-      "version": "4.4.2"
+      "version": "4.6.0"
     },
     "blender": {
       "installer": {
@@ -500,9 +500,9 @@
     "cyberduck": {
       "installer": {
         "kind": "msi",
-        "x86": "https://update.cyberduck.io/windows/Cyberduck-Installer-8.7.0.40629.msi"
+        "x86": "https://update.cyberduck.io/windows/Cyberduck-Installer-8.7.1.40770.msi"
       },
-      "version": "8.7.0.40629"
+      "version": "8.7.1.40770"
     },
     "cygwin": {
       "installer": {
@@ -1058,9 +1058,9 @@
     "handbrake": {
       "installer": {
         "kind": "nsis",
-        "x86_64": "https://github.com/HandBrake/HandBrake/releases/download/1.4.1/HandBrake-1.4.1-x86_64-Win_GUI.exe"
+        "x86_64": "https://github.com/HandBrake/HandBrake/releases/download/1.6.1/HandBrake-1.6.1-x86_64-Win_GUI.exe"
       },
-      "version": "1.4.1"
+      "version": "1.6.1"
     },
     "hashcheck": {
       "installer": {
@@ -1072,9 +1072,9 @@
     "heidisql": {
       "installer": {
         "kind": "innosetup",
-        "x86": "https://www.heidisql.com/installers/HeidiSQL_12.5.0.6677_Setup.exe"
+        "x86": "https://www.heidisql.com/installers/HeidiSQL_12.6.0.6765_Setup.exe"
       },
-      "version": "12.5.0.6677"
+      "version": "12.6.0.6765"
     },
     "hexchat": {
       "installer": {
@@ -1306,9 +1306,9 @@
     "marktext": {
       "installer": {
         "kind": "nsis",
-        "x86": "https://github.com/marktext/marktext/releases/download/v0.16.3/marktext-setup.exe"
+        "x86": "https://github.com/marktext/marktext/releases/download/v0.17.1/marktext-setup.exe"
       },
-      "version": "0.16.3"
+      "version": "0.17.1"
     },
     "mednafen": {
       "installer": {
@@ -1382,10 +1382,10 @@
             "/passive"
           ]
         },
-        "x86": "https://github.com/moonlight-stream/moonlight-qt/releases/download/v3.1.4/MoonlightSetup-3.1.4.exe",
-        "x86_64": "https://github.com/moonlight-stream/moonlight-qt/releases/download/v3.1.4/MoonlightSetup-3.1.4.exe"
+        "x86": "https://github.com/moonlight-stream/moonlight-qt/releases/download/v5.0.1/MoonlightSetup-5.0.1.exe",
+        "x86_64": "https://github.com/moonlight-stream/moonlight-qt/releases/download/v5.0.1/MoonlightSetup-5.0.1.exe"
       },
-      "version": "3.1.4"
+      "version": "5.0.1"
     },
     "mountainduck": {
       "installer": {
@@ -1397,9 +1397,9 @@
     "mp3tag": {
       "installer": {
         "kind": "nsis",
-        "x86": "https://download.mp3tag.de/mp3tagv322bsetup.exe"
+        "x86": "https://download.mp3tag.de/mp3tagv323setup.exe"
       },
-      "version": "3.22b"
+      "version": "3.23"
     },
     "mremoteng": {
       "installer": {
@@ -1589,9 +1589,9 @@
             "/S"
           ]
         },
-        "x86": "https://www.mls-software.com/files/setupssh-9.4p1-1.exe"
+        "x86": "https://www.mls-software.com/files/setupssh-9.5p1-1.exe"
       },
-      "version": "9.4"
+      "version": "9.5"
     },
     "openvpn-win10": {
       "installer": {
@@ -1787,9 +1787,9 @@
     "pycharm-community": {
       "installer": {
         "kind": "nsis",
-        "x86": "https://download.jetbrains.com/python/pycharm-community-2023.2.3.exe"
+        "x86": "https://download.jetbrains.com/python/pycharm-community-2023.2.4.exe"
       },
-      "version": "2023.2.3"
+      "version": "2023.2.4"
     },
     "python2": {
       "installer": {
@@ -1938,9 +1938,9 @@
         "options": {
           "destination": "{{.PROGRAMFILES_X86}}\\Rufus\\rufus.exe"
         },
-        "x86": "https://github.com/pbatard/rufus/releases/download/v3.15/rufus-3.15.exe"
+        "x86": "https://github.com/pbatard/rufus/releases/download/v4.3/rufus-4.3.exe"
       },
-      "version": "3.15"
+      "version": "4.3"
     },
     "sdm": {
       "installer": {
@@ -2007,10 +2007,10 @@
         "options": {
           "extension": ".exe"
         },
-        "x86": "https://sourceforge.net/projects/smplayer/files/SMPlayer/21.8.0/smplayer-21.8.0-win32.exe/download",
-        "x86_64": "https://sourceforge.net/projects/smplayer/files/SMPlayer/21.8.0/smplayer-21.8.0-x64.exe/download"
+        "x86": "https://github.com/smplayer-dev/smplayer/releases/download/v23.6.0/smplayer-23.6.0-win32-qt5.6-unsigned.exe",
+        "x86_64": "https://github.com/smplayer-dev/smplayer/releases/download/v23.6.0/smplayer-23.6.0-x64-unsigned.exe"
       },
-      "version": "21.8.0"
+      "version": "23.6.0"
     },
     "sourcetree": {
       "installer": {
