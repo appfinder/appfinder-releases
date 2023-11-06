@@ -137,10 +137,10 @@
     "anaconda": {
       "installer": {
         "kind": "nsis",
-        "x86": "https://repo.anaconda.com/archive/Anaconda3-2023.09-Windows-x86.exe",
-        "x86_64": "https://repo.anaconda.com/archive/Anaconda3-2023.09-Windows-x86_64.exe"
+        "x86": "https://repo.anaconda.com/archive/Anaconda3-2022.05-Windows-x86.exe",
+        "x86_64": "https://repo.anaconda.com/archive/Anaconda3-2023.09-0-Windows-x86_64.exe"
       },
-      "version": "2023.09"
+      "version": "2023.09-0"
     },
     "android-studio-ide": {
       "installer": {
