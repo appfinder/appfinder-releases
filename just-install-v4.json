@@ -2215,10 +2215,10 @@
     "transmission": {
       "installer": {
         "kind": "msi",
-        "x86": "https://github.com/transmission/transmission-releases/raw/master/transmission-3.00-x86.msi",
-        "x86_64": "https://github.com/transmission/transmission-releases/raw/master/transmission-3.00-x64.msi"
+        "x86": "https://github.com/transmission/transmission/releases/download/4.0.4/transmission-4.0.4-x64.msi",
+        "x86_64": "https://github.com/transmission/transmission/releases/download/4.0.4/transmission-4.0.4-x86.msi"
       },
-      "version": "3.00"
+      "version": "4.0.4"
     },
     "ubisoft-connect": {
       "installer": {
