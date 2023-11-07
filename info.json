@@ -661,10 +661,10 @@
     },
     {
         "name": "foxitreader",
-        "icon": "",
-        "rating": "",
-        "category": "",
-        "licence": ""
+        "icon": "https://static.filehorse.com/icons/office-and-business-tools/foxit-reader-icon-32.png",
+        "rating": "5",
+        "category": "desktop",
+        "licence": "Freeware"
         ,"tag":"featured"
 
     },
@@ -1349,10 +1349,10 @@
     },
     {
         "name": "qbittorrent",
-        "icon": "",
-        "rating": "",
-        "category": "",
-        "licence": ""
+        "icon": "https://static.filehorse.com/icons/file-transfer-and-networking/qbittorrent-icon-32.png",
+        "rating": "5",
+        "category": "desktop",
+        "licence": "Freeware"
         ,"tag":"featured"
 
     },
