@@ -7,8 +7,7 @@ AppFinder is a convenient app installer that allows you to install a variety of 
 - [Getting Started](#getting-started)
 - [Usage](#usage)
 - [Technologies Used](#technologies-used)
-- [Contributing](#contributing)
-- [License](#license)
+
 
 ## Features
 - One-click app installation for a variety of applications.
