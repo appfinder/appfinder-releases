@@ -12,6 +12,8 @@
         "rating": "5",
         "category": "desktop",
         "licence": "Open source"
+        ,"tag":"featured"
+
     },
     {
         "name": "anaconda",
@@ -61,6 +63,8 @@
         "rating": "5.0",
         "category": "browsers",
         "licence": "Open Source"
+        ,"tag":"featured"
+
     },
     {
         "name": "firefox-beta",
@@ -82,6 +86,8 @@
         "rating": "5.0",
         "category": "browsers",
         "licence": "Open Source"
+        ,"tag":"featured"
+
     },
     {
         "name": "google-chrome",
@@ -89,6 +95,8 @@
         "rating": "4.8",
         "category": "browsers",
         "licence": "Freeware"
+        ,"tag":"featured"
+
     },
     {
         "name": "google-chrome-beta",
@@ -110,6 +118,8 @@
         "rating": "4.0",
         "category": "browsers",
         "licence": "Freeware"
+        ,"tag":"featured"
+
     },
     {
         "name": "brave",
@@ -117,6 +127,8 @@
         "rating": "4.0",
         "category": "browsers",
         "licence": "Open Source"
+        ,"tag":"featured"
+
     },
     {
         "name": "vivaldi",
@@ -453,6 +465,8 @@
         "rating": "4",
         "category": "desktop",
         "licence": "Open Source"
+        ,"tag":"featured"
+
     },
     {
         "name": "dependency-walker",
@@ -474,6 +488,8 @@
         "rating": "4.1",
         "category": "desktop",
         "licence": "Freeware"
+        ,"tag":"featured"
+
     },
     {
         "name": "displaycal",
@@ -649,6 +665,8 @@
         "rating": "",
         "category": "",
         "licence": ""
+        ,"tag":"featured"
+
     },
     {
         "name": "freecad",
@@ -1335,6 +1353,8 @@
         "rating": "",
         "category": "",
         "licence": ""
+        ,"tag":"featured"
+
     },
     {
         "name": "qtox",
@@ -1723,10 +1743,11 @@
     },
     {
         "name": "visual-studio-code",
-        "icon": "",
-        "rating": "",
-        "category": "",
-        "licence": ""
+        "icon": "https://static.filehorse.com/icons/developer-tools/visual-studio-code-icon-32.png",
+        "rating": "5",
+        "category": "developer",
+        "licence": "Freeware",
+        "tag":"featured"
     },
     {
         "name": "visual-studio-community-2017",
@@ -1779,10 +1800,12 @@
     },
     {
         "name": "vlc",
-        "icon": "",
-        "rating": "",
-        "category": "",
-        "licence": ""
+        "icon": "https://static.filehorse.com/icons/video-software/vlc-icon-32.png",
+        "rating": "5",
+        "category": "multimedia",
+        "licence": "Open source"
+        ,"tag":"featured"
+
     },
     {
         "name": "voicemeeter",
