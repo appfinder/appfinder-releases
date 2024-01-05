@@ -15,7 +15,7 @@
       "rating": "3.2",
       "category": "security",
       "licence": "Trial",
-      "tag": ""
+      "tag": []
     },
     "7zip": {
       "installer": {
@@ -28,7 +28,9 @@
       "rating": "5",
       "category": "desktop",
       "licence": "Open source",
-      "tag": "featured"
+      "tag": [
+        "featured"
+      ]
     },
     "adoptopenjdk-13-jdk": {
       "installer": {
@@ -41,7 +43,7 @@
       "rating": "3.7",
       "category": "developer",
       "licence": "Open source",
-      "tag": ""
+      "tag": []
     },
     "adoptopenjdk-13-jre": {
       "installer": {
@@ -54,7 +56,7 @@
       "rating": "3.7",
       "category": "developer",
       "licence": "Open source",
-      "tag": ""
+      "tag": []
     },
     "adoptopenjdk-14-jdk": {
       "installer": {
@@ -67,7 +69,7 @@
       "rating": "3.7",
       "category": "developer",
       "licence": "Open source",
-      "tag": ""
+      "tag": []
     },
     "adoptopenjdk-14-jre": {
       "installer": {
@@ -80,7 +82,7 @@
       "rating": "3.7",
       "category": "developer",
       "licence": "Open source",
-      "tag": ""
+      "tag": []
     },
     "adoptopenjdk-15-jdk": {
       "installer": {
@@ -93,7 +95,7 @@
       "rating": "3.7",
       "category": "developer",
       "licence": "Open source",
-      "tag": ""
+      "tag": []
     },
     "adoptopenjdk-15-jre": {
       "installer": {
@@ -106,7 +108,7 @@
       "rating": "3.7",
       "category": "developer",
       "licence": "Open source",
-      "tag": ""
+      "tag": []
     },
     "adoptopenjdk-16-jdk": {
       "installer": {
@@ -119,7 +121,7 @@
       "rating": "3.7",
       "category": "developer",
       "licence": "Open source",
-      "tag": ""
+      "tag": []
     },
     "aescrypt-cli": {
       "installer": {
@@ -137,7 +139,7 @@
       "rating": "4.2",
       "category": "security",
       "licence": "Open Source",
-      "tag": ""
+      "tag": []
     },
     "aescrypt-gui": {
       "installer": {
@@ -164,7 +166,7 @@
       "rating": "4.3",
       "category": "security",
       "licence": "Open Source",
-      "tag": ""
+      "tag": []
     },
     "amazon-corretto-11": {
       "installer": {
@@ -176,7 +178,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "amazon-corretto-8": {
       "installer": {
@@ -189,7 +191,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "anaconda": {
       "installer": {
@@ -202,19 +204,19 @@
       "rating": "4.1",
       "category": "developer",
       "licence": "Open source",
-      "tag": ""
+      "tag": []
     },
     "android-studio-ide": {
       "installer": {
         "kind": "nsis",
-        "x86_64": "https://redirector.gvt1.com/edgedl/android/studio/install/2023.1.1.26/android-studio-2023.1.1.26-windows.exe"
+        "x86_64": "https://redirector.gvt1.com/edgedl/android/studio/install/2023.1.1.27/android-studio-2023.1.1.27-windows.exe"
       },
-      "version": "2023.1.1.26",
+      "version": "2023.1.1.27",
       "icon": "https://static.filehorse.com/icons/developer-tools/android-studio-icon-32.png",
       "rating": "4.5",
       "category": "developer",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "antimicro": {
       "installer": {
@@ -226,7 +228,7 @@
       "rating": "4.6",
       "category": "desktop",
       "licence": "Open Source",
-      "tag": ""
+      "tag": []
     },
     "anydesk": {
       "installer": {
@@ -238,7 +240,7 @@
       "rating": "4.3",
       "category": "desktop",
       "licence": "Trial",
-      "tag": ""
+      "tag": []
     },
     "arduino": {
       "installer": {
@@ -250,7 +252,7 @@
       "rating": "4.0",
       "category": "desktop",
       "licence": "Open Source",
-      "tag": ""
+      "tag": []
     },
     "atom": {
       "installer": {
@@ -266,7 +268,7 @@
       "rating": "4.0",
       "category": "developer",
       "licence": "Open Source",
-      "tag": ""
+      "tag": []
     },
     "audacity": {
       "installer": {
@@ -279,7 +281,7 @@
       "rating": "4.0",
       "category": "multimedia",
       "licence": "Open Source",
-      "tag": ""
+      "tag": []
     },
     "autohotkey": {
       "installer": {
@@ -291,7 +293,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "autoruns": {
       "installer": {
@@ -306,7 +308,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "aws-cli": {
       "installer": {
@@ -319,7 +321,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "axcrypt": {
       "installer": {
@@ -337,7 +339,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "azcopy": {
       "installer": {
@@ -352,7 +354,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "azure-cli": {
       "installer": {
@@ -367,7 +369,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "bcuninstaller": {
       "installer": {
@@ -379,7 +381,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "bitwarden": {
       "installer": {
@@ -394,7 +396,7 @@
       "rating": "4.7",
       "category": "security",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "bleachbit": {
       "installer": {
@@ -413,7 +415,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "blender": {
       "installer": {
@@ -425,7 +427,7 @@
       "rating": "4.2",
       "category": "multimedia",
       "licence": "Open Source",
-      "tag": ""
+      "tag": []
     },
     "bootnext": {
       "installer": {
@@ -437,7 +439,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "brackets": {
       "installer": {
@@ -449,7 +451,7 @@
       "rating": "4.0",
       "category": "developer",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "brave": {
       "installer": {
@@ -465,7 +467,9 @@
       "rating": "4.0",
       "category": "browsers",
       "licence": "Open Source",
-      "tag": "featured"
+      "tag": [
+        "featured"
+      ]
     },
     "calibre": {
       "installer": {
@@ -481,7 +485,7 @@
       "rating": "4.0",
       "category": "desktop",
       "licence": "Open Source",
-      "tag": ""
+      "tag": []
     },
     "chrome-remote-desktop-host": {
       "installer": {
@@ -493,7 +497,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "citrix-receiver": {
       "installer": {
@@ -512,7 +516,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "classic-shell": {
       "installer": {
@@ -531,7 +535,7 @@
       "rating": "3.1",
       "category": "desktop",
       "licence": "Open Source",
-      "tag": ""
+      "tag": []
     },
     "clementine-player": {
       "installer": {
@@ -543,7 +547,7 @@
       "rating": "3.8",
       "category": "multimedia",
       "licence": "Open Source",
-      "tag": ""
+      "tag": []
     },
     "cmake": {
       "installer": {
@@ -556,7 +560,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "codeblocks": {
       "installer": {
@@ -572,7 +576,7 @@
       "rating": "3.4",
       "category": "developer",
       "licence": "Open Source",
-      "tag": ""
+      "tag": []
     },
     "codeblocks-mingw": {
       "installer": {
@@ -588,7 +592,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "colemak": {
       "installer": {
@@ -606,7 +610,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "cpu-z": {
       "installer": {
@@ -618,7 +622,7 @@
       "rating": "4.8",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "cyberduck": {
       "installer": {
@@ -630,7 +634,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "cygwin": {
       "installer": {
@@ -661,7 +665,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "deluge": {
       "installer": {
@@ -674,7 +678,9 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Open Source",
-      "tag": "featured"
+      "tag": [
+        "featured"
+      ]
     },
     "dependency-walker": {
       "installer": {
@@ -690,7 +696,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "directx-june2010": {
       "installer": {
@@ -719,7 +725,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "discord": {
       "installer": {
@@ -734,7 +740,9 @@
       "rating": "4.1",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": "featured"
+      "tag": [
+        "featured"
+      ]
     },
     "displaycal": {
       "installer": {
@@ -749,7 +757,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "ditto": {
       "installer": {
@@ -765,7 +773,7 @@
       "rating": "4.5",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "dotnet": {
       "installer": {
@@ -785,7 +793,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "doublecmd": {
       "installer": {
@@ -801,7 +809,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "dropbox": {
       "installer": {
@@ -820,7 +828,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "duck": {
       "installer": {
@@ -832,7 +840,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "dynalist": {
       "installer": {
@@ -847,7 +855,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "eac": {
       "installer": {
@@ -859,7 +867,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "eclipse-committers": {
       "installer": {
@@ -874,7 +882,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "eclipse-cpp": {
       "installer": {
@@ -889,7 +897,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "eclipse-java": {
       "installer": {
@@ -904,7 +912,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "eclipse-jee": {
       "installer": {
@@ -919,7 +927,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "eclipse-php": {
       "installer": {
@@ -934,7 +942,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "em-client": {
       "installer": {
@@ -946,7 +954,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "emacs": {
       "installer": {
@@ -968,7 +976,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "empoche": {
       "installer": {
@@ -980,7 +988,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "enpass": {
       "installer": {
@@ -992,7 +1000,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "epic-games-launcher": {
       "installer": {
@@ -1004,7 +1012,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "erlang": {
       "installer": {
@@ -1017,7 +1025,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "etcher": {
       "installer": {
@@ -1029,7 +1037,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "everything-search": {
       "installer": {
@@ -1042,7 +1050,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "exeproxy": {
       "installer": {
@@ -1057,7 +1065,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "firefox": {
       "installer": {
@@ -1073,7 +1081,10 @@
       "rating": "5.0",
       "category": "browsers",
       "licence": "Open Source",
-      "tag": "featured"
+      "tag": [
+        "featured",
+        "win10"
+      ]
     },
     "firefox-beta": {
       "installer": {
@@ -1089,7 +1100,7 @@
       "rating": "5.0",
       "category": "browsers",
       "licence": "Open Source",
-      "tag": ""
+      "tag": []
     },
     "firefox-developer-edition": {
       "installer": {
@@ -1105,7 +1116,7 @@
       "rating": "5.0",
       "category": "browsers",
       "licence": "Open Source",
-      "tag": ""
+      "tag": []
     },
     "firefox-esr": {
       "installer": {
@@ -1121,7 +1132,10 @@
       "rating": "5.0",
       "category": "browsers",
       "licence": "Open Source",
-      "tag": "featured"
+      "tag": [
+        "featured",
+        "win7"
+      ]
     },
     "flux": {
       "installer": {
@@ -1133,7 +1147,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "foxitreader": {
       "installer": {
@@ -1148,7 +1162,9 @@
       "rating": "5",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": "featured"
+      "tag": [
+        "featured"
+      ]
     },
     "freeplane": {
       "installer": {
@@ -1163,7 +1179,7 @@
       "rating": "4.0",
       "category": "desktop",
       "licence": "Open Source",
-      "tag": ""
+      "tag": []
     },
     "gimp": {
       "installer": {
@@ -1175,7 +1191,7 @@
       "rating": "4.8",
       "category": "desktop",
       "licence": "Open Source",
-      "tag": ""
+      "tag": []
     },
     "git": {
       "installer": {
@@ -1193,7 +1209,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "github": {
       "installer": {
@@ -1208,7 +1224,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "gitkraken": {
       "installer": {
@@ -1221,7 +1237,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "go": {
       "installer": {
@@ -1234,7 +1250,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "gog-galaxy": {
       "installer": {
@@ -1249,7 +1265,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "google-chrome": {
       "installer": {
@@ -1262,7 +1278,9 @@
       "rating": "4.8",
       "category": "browsers",
       "licence": "Freeware",
-      "tag": "featured"
+      "tag": [
+        "featured"
+      ]
     },
     "google-chrome-beta": {
       "installer": {
@@ -1275,7 +1293,7 @@
       "rating": "4.8",
       "category": "browsers",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "google-chrome-dev": {
       "installer": {
@@ -1288,7 +1306,7 @@
       "rating": "4.8",
       "category": "browsers",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "google-drive": {
       "installer": {
@@ -1300,7 +1318,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "gpg4win": {
       "installer": {
@@ -1312,7 +1330,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "gvim": {
       "installer": {
@@ -1324,7 +1342,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "handbrake": {
       "installer": {
@@ -1336,7 +1354,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "heidisql": {
       "installer": {
@@ -1348,7 +1366,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "hexchat": {
       "installer": {
@@ -1361,7 +1379,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "inkscape": {
       "installer": {
@@ -1374,7 +1392,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "innosetup": {
       "installer": {
@@ -1389,7 +1407,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "intellij-idea-community": {
       "installer": {
@@ -1401,7 +1419,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "irfanview": {
       "installer": {
@@ -1420,7 +1438,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "itch": {
       "installer": {
@@ -1435,7 +1453,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "jetbrains-toolbox": {
       "installer": {
@@ -1450,7 +1468,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "jom": {
       "installer": {
@@ -1468,7 +1486,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "keepass": {
       "installer": {
@@ -1483,7 +1501,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "keepass-keepasshttp": {
       "installer": {
@@ -1498,7 +1516,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "keybase": {
       "installer": {
@@ -1517,7 +1535,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "kodi": {
       "installer": {
@@ -1529,7 +1547,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "krita": {
       "installer": {
@@ -1542,7 +1560,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "libreoffice": {
       "installer": {
@@ -1555,7 +1573,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "lightshot": {
       "installer": {
@@ -1567,7 +1585,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "lockhunter": {
       "installer": {
@@ -1579,7 +1597,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "mailspring": {
       "installer": {
@@ -1594,7 +1612,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "mailstore-home": {
       "installer": {
@@ -1609,7 +1627,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "malwarebytes": {
       "installer": {
@@ -1624,7 +1642,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "marktext": {
       "installer": {
@@ -1636,7 +1654,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "mednafen": {
       "installer": {
@@ -1655,7 +1673,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "mega-sync": {
       "installer": {
@@ -1667,7 +1685,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "mercurial": {
       "installer": {
@@ -1685,7 +1703,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "microsoft-security-essentials": {
       "installer": {
@@ -1704,7 +1722,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "microsoft-teams": {
       "installer": {
@@ -1717,7 +1735,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "mono": {
       "installer": {
@@ -1729,7 +1747,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "moonlight-qt": {
       "installer": {
@@ -1748,7 +1766,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "mountainduck": {
       "installer": {
@@ -1760,7 +1778,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "mp3tag": {
       "installer": {
@@ -1772,7 +1790,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "mremoteng": {
       "installer": {
@@ -1784,7 +1802,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "mysql-workbench": {
       "installer": {
@@ -1796,7 +1814,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "nettime": {
       "installer": {
@@ -1808,7 +1826,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "nircmd": {
       "installer": {
@@ -1824,7 +1842,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "node": {
       "installer": {
@@ -1837,7 +1855,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "node-lts": {
       "installer": {
@@ -1850,7 +1868,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "nordvpn": {
       "installer": {
@@ -1868,7 +1886,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "nsis": {
       "installer": {
@@ -1880,7 +1898,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "obs-studio": {
       "installer": {
@@ -1892,7 +1910,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "octave": {
       "installer": {
@@ -1905,7 +1923,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "onlyoffice-desktopeditors": {
       "installer": {
@@ -1918,7 +1936,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "open-hardware-monitor": {
       "installer": {
@@ -1933,7 +1951,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "openssh": {
       "installer": {
@@ -1955,7 +1973,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "openvpn-win10": {
       "installer": {
@@ -1967,7 +1985,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "openvpn-win7": {
       "installer": {
@@ -1979,7 +1997,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "opera": {
       "installer": {
@@ -2001,7 +2019,9 @@
       "rating": "4.0",
       "category": "browsers",
       "licence": "Freeware",
-      "tag": "featured"
+      "tag": [
+        "featured"
+      ]
     },
     "origin": {
       "installer": {
@@ -2013,7 +2033,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "paint.net": {
       "installer": {
@@ -2035,7 +2055,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "parsec": {
       "installer": {
@@ -2048,7 +2068,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "pdf24": {
       "installer": {
@@ -2072,7 +2092,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "perl": {
       "installer": {
@@ -2085,7 +2105,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "php": {
       "installer": {
@@ -2105,7 +2125,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "physx": {
       "installer": {
@@ -2123,7 +2143,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "pia": {
       "installer": {
@@ -2135,7 +2155,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "plex-media-server": {
       "installer": {
@@ -2154,7 +2174,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "postman": {
       "installer": {
@@ -2170,7 +2190,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "potplayer": {
       "installer": {
@@ -2183,7 +2203,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "procmon": {
       "installer": {
@@ -2198,7 +2218,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "putty": {
       "installer": {
@@ -2211,7 +2231,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "pycharm-community": {
       "installer": {
@@ -2223,7 +2243,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "python2": {
       "installer": {
@@ -2242,7 +2262,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "python3": {
       "installer": {
@@ -2262,7 +2282,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "python3-minimal": {
       "installer": {
@@ -2283,7 +2303,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "qbittorrent": {
       "installer": {
@@ -2299,7 +2319,9 @@
       "rating": "5",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": "featured"
+      "tag": [
+        "featured"
+      ]
     },
     "rapidee": {
       "installer": {
@@ -2311,7 +2333,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "rclone": {
       "installer": {
@@ -2327,7 +2349,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "rclone-browser": {
       "installer": {
@@ -2340,7 +2362,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "resilio-sync": {
       "installer": {
@@ -2360,7 +2382,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "resource-hacker": {
       "installer": {
@@ -2372,7 +2394,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "retroarch": {
       "installer": {
@@ -2385,7 +2407,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "rufus": {
       "installer": {
@@ -2400,7 +2422,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "sdm": {
       "installer": {
@@ -2412,7 +2434,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "seafile-client": {
       "installer": {
@@ -2424,19 +2446,19 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "signal": {
       "installer": {
         "kind": "nsis",
-        "x86": "https://updates.signal.org/desktop/signal-desktop-win-6.42.1.exe"
+        "x86": "https://updates.signal.org/desktop/signal-desktop-win-6.43.1.exe"
       },
-      "version": "6.42.1",
+      "version": "6.43.1",
       "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "simplenote": {
       "installer": {
@@ -2448,7 +2470,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "slack": {
       "installer": {
@@ -2463,7 +2485,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "smplayer": {
       "installer": {
@@ -2479,7 +2501,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "sourcetree": {
       "installer": {
@@ -2491,7 +2513,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "spice-guest-tools": {
       "installer": {
@@ -2503,7 +2525,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "spice-webdavd": {
       "installer": {
@@ -2516,7 +2538,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "sshfs-win": {
       "installer": {
@@ -2529,7 +2551,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "steam": {
       "installer": {
@@ -2541,7 +2563,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "sublime-text": {
       "installer": {
@@ -2554,7 +2576,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "sublime-text-3": {
       "installer": {
@@ -2572,7 +2594,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "sublime-text-dev": {
       "installer": {
@@ -2590,7 +2612,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "sumatrapdf": {
       "installer": {
@@ -2610,7 +2632,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "sysinternals": {
       "installer": {
@@ -2625,7 +2647,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "teamspeak": {
       "installer": {
@@ -2638,7 +2660,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "teamviewer": {
       "installer": {
@@ -2650,7 +2672,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "telegram": {
       "installer": {
@@ -2665,7 +2687,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "thunderbird": {
       "installer": {
@@ -2681,7 +2703,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "tightvnc": {
       "installer": {
@@ -2694,7 +2716,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "tor-browser": {
       "installer": {
@@ -2707,7 +2729,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "torguard": {
       "installer": {
@@ -2720,7 +2742,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "tortoisegit": {
       "installer": {
@@ -2733,7 +2755,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "transmission": {
       "installer": {
@@ -2746,7 +2768,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "ubisoft-connect": {
       "installer": {
@@ -2761,7 +2783,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "vagrant": {
       "installer": {
@@ -2774,7 +2796,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "vcredist-2005": {
       "installer": {
@@ -2793,7 +2815,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "vcredist-2008": {
       "installer": {
@@ -2812,7 +2834,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "vcredist-2010": {
       "installer": {
@@ -2832,7 +2854,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "vcredist-2012": {
       "installer": {
@@ -2852,7 +2874,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "vcredist-2013": {
       "installer": {
@@ -2885,7 +2907,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "vcredist-2015": {
       "installer": {
@@ -2906,7 +2928,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "vcredist-2017": {
       "installer": {
@@ -2927,7 +2949,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "vcredist-2019": {
       "installer": {
@@ -2948,7 +2970,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "virtualbox": {
       "installer": {
@@ -2970,7 +2992,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "viscosity": {
       "installer": {
@@ -2982,7 +3004,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "visual-studio-code": {
       "installer": {
@@ -3005,7 +3027,9 @@
       "rating": "5",
       "category": "developer",
       "licence": "Freeware",
-      "tag": "featured"
+      "tag": [
+        "featured"
+      ]
     },
     "visual-studio-community-2017": {
       "installer": {
@@ -3026,7 +3050,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "visual-studio-community-2019": {
       "installer": {
@@ -3047,7 +3071,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "visual-studio-enterprise-2017": {
       "installer": {
@@ -3068,7 +3092,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "visual-studio-enterprise-2019": {
       "installer": {
@@ -3089,7 +3113,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "visual-studio-professional-2017": {
       "installer": {
@@ -3110,7 +3134,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "visual-studio-professional-2019": {
       "installer": {
@@ -3131,7 +3155,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "visual-studio-vctools-2019": {
       "installer": {
@@ -3155,7 +3179,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "vivaldi": {
       "installer": {
@@ -3168,15 +3192,15 @@
             "--vivaldi-update"
           ]
         },
-        "x86": "https://downloads.vivaldi.com/stable/Vivaldi.6.5.3206.48.exe",
-        "x86_64": "https://downloads.vivaldi.com/stable/Vivaldi.6.5.3206.48.x64.exe"
+        "x86": "https://downloads.vivaldi.com/stable/Vivaldi.6.5.3206.50.exe",
+        "x86_64": "https://downloads.vivaldi.com/stable/Vivaldi.6.5.3206.50.x64.exe"
       },
-      "version": "6.5.3206.48",
+      "version": "6.5.3206.50",
       "icon": "https://static.filehorse.com/icons/browsers-and-plugins/vivaldi-icon-32.png",
       "rating": "4.0",
       "category": "browsers",
       "licence": "Open Source",
-      "tag": ""
+      "tag": []
     },
     "vlc": {
       "installer": {
@@ -3189,7 +3213,9 @@
       "rating": "5",
       "category": "multimedia",
       "licence": "Open source",
-      "tag": "featured"
+      "tag": [
+        "featured"
+      ]
     },
     "voicemeeter": {
       "installer": {
@@ -3201,7 +3227,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "voicemeeter-banana": {
       "installer": {
@@ -3213,7 +3239,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "webtorrent": {
       "installer": {
@@ -3225,7 +3251,7 @@
       "rating": "3.3",
       "category": "desktop",
       "licence": "Open Source",
-      "tag": ""
+      "tag": []
     },
     "whatsapp": {
       "installer": {
@@ -3238,7 +3264,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "windirstat": {
       "installer": {
@@ -3250,7 +3276,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "windows-terminal": {
       "installer": {
@@ -3262,7 +3288,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "winrar": {
       "installer": {
@@ -3281,7 +3307,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "winscp": {
       "installer": {
@@ -3296,7 +3322,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "wireshark": {
       "installer": {
@@ -3309,7 +3335,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "wix": {
       "installer": {
@@ -3345,7 +3371,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "wpd": {
       "installer": {
@@ -3360,7 +3386,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "yarn": {
       "installer": {
@@ -3375,7 +3401,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "yatqa": {
       "installer": {
@@ -3390,7 +3416,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     },
     "youtube-dl": {
       "installer": {
@@ -3408,7 +3434,7 @@
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
-      "tag": ""
+      "tag": []
     }
   }
 }
