@@ -10,7 +10,7 @@
         },
         "x86": "https://c.1password.com/dist/1P/win6/1PasswordSetup-7.9.835.exe"
       },
-      "version": "7.9.835",
+      "version": "6.9.835",
       "icon": "https://static.filehorse.com/icons/firewalls-and-security/1password-icon-32.png",
       "rating": "3.1",
       "category": "security",
