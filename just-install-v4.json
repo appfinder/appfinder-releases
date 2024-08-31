@@ -1906,7 +1906,7 @@
         "x86": "https://cdn-fastly.obsproject.com/downloads/OBS-Studio-30.2.3-Windows-Installer.exe"
       },
       "version": "30.2.3",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
+      "icon": "https://obsproject.com/assets/images/new_icon_small-r.png",
       "rating": "4",
       "category": "desktop",
       "licence": "Freeware",
