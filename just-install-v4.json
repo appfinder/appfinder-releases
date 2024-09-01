@@ -3204,7 +3204,14 @@
     },
     "vlc": {
       "installer": {
-        "kind": "msi",
+        "kind": "custom",
+        "options": {
+          "arguments": [
+            "{{.installer}}",
+            "/allusers",
+            "/S"
+          ]
+        },
         "x86": "https://download.videolan.org/pub/videolan/vlc/last/win32/vlc-3.0.21-win32.exe",
         "x86_64": "https://download.videolan.org/pub/videolan/vlc/last/win64/vlc-3.0.21-win64.exe"
       },
