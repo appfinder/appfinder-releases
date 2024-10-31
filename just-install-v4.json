@@ -197,9 +197,9 @@
       "installer": {
         "kind": "nsis",
         "x86": "https://repo.anaconda.com/archive/Anaconda3-2022.05-Windows-x86.exe",
-        "x86_64": "https://repo.anaconda.com/archive/Anaconda3-2024.06-1-Windows-x86_64.exe"
+        "x86_64": "https://repo.anaconda.com/archive/Anaconda3-2024.10-1-Windows-x86_64.exe"
       },
-      "version": "2024.06-1",
+      "version": "2024.10-1",
       "icon": "https://static.filehorse.com/icons/developer-tools/anaconda-icon-32.png",
       "rating": "4.1",
       "category": "developer",
@@ -209,9 +209,9 @@
     "android-studio-ide": {
       "installer": {
         "kind": "nsis",
-        "x86_64": "https://redirector.gvt1.com/edgedl/android/studio/install/2024.1.2.12/android-studio-2024.1.2.12-windows.exe"
+        "x86_64": "https://redirector.gvt1.com/edgedl/android/studio/install/2024.2.1.10/android-studio-2024.2.1.10-windows.exe"
       },
-      "version": "2024.1.2.12",
+      "version": "2024.2.1.10",
       "icon": "https://static.filehorse.com/icons/developer-tools/android-studio-icon-32.png",
       "rating": "4.5",
       "category": "developer",
@@ -273,10 +273,10 @@
     "audacity": {
       "installer": {
         "kind": "innosetup",
-        "x86": "https://github.com/audacity/audacity/releases/download/Audacity-3.6.1/audacity-win-3.6.1-32bit.exe",
-        "x86_64": "https://github.com/audacity/audacity/releases/download/Audacity-3.6.1/audacity-win-3.6.1-64bit.exe"
+        "x86": "https://github.com/audacity/audacity/releases/download/Audacity-3.7.0/audacity-win-3.7.0-32bit.exe",
+        "x86_64": "https://github.com/audacity/audacity/releases/download/Audacity-3.7.0/audacity-win-3.7.0-64bit.exe"
       },
-      "version": "3.6.1",
+      "version": "3.7.0",
       "icon": "https://static.filehorse.com/icons/mp3-and-audio/audacity-icon-32.png",
       "rating": "4.0",
       "category": "multimedia",
@@ -408,9 +408,9 @@
             "/S"
           ]
         },
-        "x86": "https://download.bleachbit.org/BleachBit-4.6.0-setup.exe"
+        "x86": "https://download.bleachbit.org/BleachBit-4.6.2-setup.exe"
       },
-      "version": "4.6.0",
+      "version": "4.6.2",
       "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "rating": "4",
       "category": "desktop",
@@ -420,9 +420,9 @@
     "blender": {
       "installer": {
         "kind": "msi",
-        "x86_64": "https://download.blender.org/release/Blender4.2/blender-4.2.1-windows-x64.msi"
+        "x86_64": "https://download.blender.org/release/Blender4.2/blender-4.2.3-windows-x64.msi"
       },
-      "version": "4.2.1",
+      "version": "4.2.3",
       "icon": "https://static.filehorse.com/icons/imaging-and-digital-photo/blender-icon-32.png",
       "rating": "4.2",
       "category": "multimedia",
@@ -432,9 +432,9 @@
     "bootnext": {
       "installer": {
         "kind": "msi",
-        "x86_64": "https://ci.appveyor.com/api/buildjobs/m42r3drcmkfsk4iw/artifacts/installer%2Fbin%2Fx64%2FRelease%2Fbootnext.msi"
+        "x86_64": "https://ci.appveyor.com/api/buildjobs/9i2bcrj0byto7s94/artifacts/installer%2Fbin%2Fx64%2FRelease%2Fbootnext.msi"
       },
-      "version": "1.0.82",
+      "version": "1.0.84",
       "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "rating": "4",
       "category": "desktop",
@@ -540,9 +540,9 @@
     "clementine-player": {
       "installer": {
         "kind": "nsis",
-        "x86": "https://github.com/clementine-player/Clementine/releases/download/1.3.1/ClementineSetup-1.3.1.exe"
+        "x86": "https://github.com/clementine-player/Clementine/releases/download/1.4.1-11-gcecc1c1b5/ClementineSetup-1.4.1-11-gcecc1c1b5.exe"
       },
-      "version": "1.3.1",
+      "version": "1.4.1-11-gcecc1c1b5",
       "icon": "https://static.filehorse.com/icons/mp3-and-audio/clementine-music-player-icon-32.png",
       "rating": "3.8",
       "category": "multimedia",
@@ -552,10 +552,10 @@
     "cmake": {
       "installer": {
         "kind": "msi",
-        "x86": "https://github.com/Kitware/CMake/releases/download/v3.30.0-rc4/cmake-3.30.0-rc4-windows-i386.msi",
-        "x86_64": "https://github.com/Kitware/CMake/releases/download/v3.30.0-rc4/cmake-3.30.0-rc4-windows-x86_64.msi"
+        "x86": "https://github.com/Kitware/CMake/releases/download/v3.31.0-rc3/cmake-3.31.0-rc3-windows-i386.msi",
+        "x86_64": "https://github.com/Kitware/CMake/releases/download/v3.31.0-rc3/cmake-3.31.0-rc3-windows-x86_64.msi"
       },
-      "version": "3.30.3",
+      "version": "3.30.5",
       "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "rating": "4",
       "category": "desktop",
@@ -615,9 +615,9 @@
     "cpu-z": {
       "installer": {
         "kind": "innosetup",
-        "x86": "https://download.cpuid.com/cpu-z/cpu-z_2.10-en.exe"
+        "x86": "https://download.cpuid.com/cpu-z/cpu-z_2.11-en.exe"
       },
-      "version": "2.10",
+      "version": "2.11",
       "icon": "https://www.cpuid.com/medias/images/softwares/cpu-z.svg",
       "rating": "4.8",
       "category": "desktop",
@@ -627,9 +627,9 @@
     "cyberduck": {
       "installer": {
         "kind": "msi",
-        "x86": "https://update.cyberduck.io/windows/Cyberduck-Installer-9.0.1.41941.msi"
+        "x86": "https://update.cyberduck.io/windows/Cyberduck-Installer-9.0.3.42112.msi"
       },
-      "version": "9.0.1.41941",
+      "version": "9.0.3.42112",
       "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "rating": "4",
       "category": "desktop",
@@ -801,10 +801,10 @@
         "options": {
           "extension": ".exe"
         },
-        "x86": "https://sourceforge.net/projects/doublecmd/files/DC%20for%20Windows%2032%20bit/Double%20Commander%201.1.17/doublecmd-1.1.17.i386-win32.exe/download",
-        "x86_64": "https://sourceforge.net/projects/doublecmd/files/DC%20for%20Windows%2064%20bit/Double%20Commander%201.1.17/doublecmd-1.1.17.x86_64-win64.exe/download"
+        "x86": "https://sourceforge.net/projects/doublecmd/files/DC%20for%20Windows%2032%20bit/Double%20Commander%201.1.19/doublecmd-1.1.19.i386-win32.exe/download",
+        "x86_64": "https://sourceforge.net/projects/doublecmd/files/DC%20for%20Windows%2064%20bit/Double%20Commander%201.1.19/doublecmd-1.1.19.x86_64-win64.exe/download"
       },
-      "version": "1.1.17",
+      "version": "1.1.19",
       "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "rating": "4",
       "category": "desktop",
@@ -833,9 +833,9 @@
     "duck": {
       "installer": {
         "kind": "msi",
-        "x86": "https://dist.duck.sh/duck-9.0.1.41941.msi"
+        "x86": "https://dist.duck.sh/duck-9.0.2.42108.msi"
       },
-      "version": "9.0.1.41941",
+      "version": "9.0.2.42108",
       "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "rating": "4",
       "category": "desktop",
@@ -875,9 +875,9 @@
         "options": {
           "destination": "{{.PROGRAMFILES}}\\Eclipse-Committers"
         },
-        "x86_64": "http://ftp.osuosl.org/pub/eclipse/technology/epp/downloads/release/2024-06/R/eclipse-committers-2024-06-R-win32-x86_64.zip"
+        "x86_64": "http://ftp.osuosl.org/pub/eclipse/technology/epp/downloads/release/2024-09/R/eclipse-committers-2024-09-R-win32-x86_64.zip"
       },
-      "version": "2024-06-R",
+      "version": "2024-09-R",
       "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "rating": "4",
       "category": "desktop",
@@ -890,9 +890,9 @@
         "options": {
           "destination": "{{.PROGRAMFILES}}\\Eclipse-CPP"
         },
-        "x86_64": "http://ftp.osuosl.org/pub/eclipse/technology/epp/downloads/release/2024-06/R/eclipse-cpp-2024-06-R-win32-x86_64.zip"
+        "x86_64": "http://ftp.osuosl.org/pub/eclipse/technology/epp/downloads/release/2024-09/R/eclipse-cpp-2024-09-R-win32-x86_64.zip"
       },
-      "version": "2024-06-R",
+      "version": "2024-09-R",
       "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "rating": "4",
       "category": "desktop",
@@ -905,9 +905,9 @@
         "options": {
           "destination": "{{.PROGRAMFILES}}\\Eclipse-Java"
         },
-        "x86_64": "http://ftp.osuosl.org/pub/eclipse/technology/epp/downloads/release/2024-06/R/eclipse-java-2024-06-R-win32-x86_64.zip"
+        "x86_64": "http://ftp.osuosl.org/pub/eclipse/technology/epp/downloads/release/2024-09/R/eclipse-java-2024-09-R-win32-x86_64.zip"
       },
-      "version": "2024-06-R",
+      "version": "2024-09-R",
       "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "rating": "4",
       "category": "desktop",
@@ -920,9 +920,9 @@
         "options": {
           "destination": "{{.PROGRAMFILES}}\\Eclipse-JEE"
         },
-        "x86_64": "http://ftp.osuosl.org/pub/eclipse/technology/epp/downloads/release/2024-06/R/eclipse-jee-2024-06-R-win32-x86_64.zip"
+        "x86_64": "http://ftp.osuosl.org/pub/eclipse/technology/epp/downloads/release/2024-09/R/eclipse-jee-2024-09-R-win32-x86_64.zip"
       },
-      "version": "2024-06-R",
+      "version": "2024-09-R",
       "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "rating": "4",
       "category": "desktop",
@@ -935,9 +935,9 @@
         "options": {
           "destination": "{{.PROGRAMFILES}}\\Eclipse-PHP"
         },
-        "x86_64": "http://ftp.osuosl.org/pub/eclipse/technology/epp/downloads/release/2024-06/R/eclipse-php-2024-06-R-win32-x86_64.zip"
+        "x86_64": "http://ftp.osuosl.org/pub/eclipse/technology/epp/downloads/release/2024-09/R/eclipse-php-2024-09-R-win32-x86_64.zip"
       },
-      "version": "2024-06-R",
+      "version": "2024-09-R",
       "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "rating": "4",
       "category": "desktop",
@@ -1017,10 +1017,10 @@
     "erlang": {
       "installer": {
         "kind": "nsis",
-        "x86": "https://github.com/erlang/otp/releases/download/OTP-27.0.1/otp_win32_27.0.1.exe",
-        "x86_64": "https://github.com/erlang/otp/releases/download/OTP-27.0.1/otp_win64_27.0.1.exe"
+        "x86": "https://github.com/erlang/otp/releases/download/OTP-27.1.2/otp_win32_27.1.2.exe",
+        "x86_64": "https://github.com/erlang/otp/releases/download/OTP-27.1.2/otp_win64_27.1.2.exe"
       },
-      "version": "27.0.1",
+      "version": "27.1.2",
       "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "rating": "4",
       "category": "desktop",
@@ -1030,9 +1030,9 @@
     "etcher": {
       "installer": {
         "kind": "nsis",
-        "x86": "https://github.com/balena-io/etcher/releases/download/v1.19.21/balenaEtcher-Setup-1.19.21.exe"
+        "x86": "https://github.com/balena-io/etcher/releases/download/v1.19.25/balenaEtcher-Setup-1.19.25.exe"
       },
-      "version": "1.19.21",
+      "version": "1.19.25",
       "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "rating": "4",
       "category": "desktop",
@@ -1172,9 +1172,9 @@
         "options": {
           "extension": ".exe"
         },
-        "x86": "https://sourceforge.net/projects/freeplane/files/freeplane%20stable/Freeplane-Setup-1.12.4u1.exe/download"
+        "x86": "https://sourceforge.net/projects/freeplane/files/freeplane%20stable/Freeplane-Setup-1.12.6.exe/download"
       },
-      "version": "1.12.4u1",
+      "version": "1.12.6",
       "icon": "https://static.filehorse.com/icons/office-and-business-tools/freeplane-icon-32.png",
       "rating": "4.0",
       "category": "desktop",
@@ -1201,10 +1201,10 @@
             "{{.PROGRAMFILES}}\\Git\\bin\\git.exe"
           ]
         },
-        "x86": "https://github.com/git-for-windows/git/releases/download/v2.46.0.windows.2/Git-2.46.0.2-32-bit.exe",
-        "x86_64": "https://github.com/git-for-windows/git/releases/download/v2.46.0.windows.2/Git-2.46.0.2-64-bit.exe"
+        "x86": "https://github.com/git-for-windows/git/releases/download/v2.47.0.windows.2/Git-2.47.0.2-32-bit.exe",
+        "x86_64": "https://github.com/git-for-windows/git/releases/download/v2.47.0.windows.2/Git-2.47.0.2-64-bit.exe"
       },
-      "version": "2.46.0",
+      "version": "2.47.0",
       "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "rating": "4",
       "category": "desktop",
@@ -1242,10 +1242,10 @@
     "go": {
       "installer": {
         "kind": "msi",
-        "x86": "https://dl.google.com/go/go1.23.0.windows-386.msi",
-        "x86_64": "https://dl.google.com/go/go1.23.0.windows-amd64.msi"
+        "x86": "https://dl.google.com/go/go1.23.2.windows-386.msi",
+        "x86_64": "https://dl.google.com/go/go1.23.2.windows-amd64.msi"
       },
-      "version": "1.23.0",
+      "version": "1.23.2",
       "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "rating": "4",
       "category": "desktop",
@@ -1412,9 +1412,9 @@
     "intellij-idea-community": {
       "installer": {
         "kind": "nsis",
-        "x86": "https://download.jetbrains.com/idea/ideaIC-2024.2.1.exe"
+        "x86": "https://download.jetbrains.com/idea/ideaIC-2024.2.4.exe"
       },
-      "version": "2024.2.1",
+      "version": "2024.2.4",
       "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "rating": "4",
       "category": "desktop",
@@ -1430,10 +1430,10 @@
             "/silent"
           ]
         },
-        "x86": "http://download.betanews.com/download/967963863-1/iview467_setup.exe",
-        "x86_64": "http://download.betanews.com/download/967963863-1/iview467_x64_setup.exe"
+        "x86": "http://download.betanews.com/download/967963863-1/iview470_setup.exe",
+        "x86_64": "http://download.betanews.com/download/967963863-1/iview470_x64_setup.exe"
       },
-      "version": "4.67",
+      "version": "4.70",
       "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "rating": "4",
       "category": "desktop",
@@ -1494,9 +1494,9 @@
         "options": {
           "extension": ".msi"
         },
-        "x86": "https://sourceforge.net/projects/keepass/files/KeePass%202.x/2.57/KeePass-2.57.msi/download"
+        "x86": "https://sourceforge.net/projects/keepass/files/KeePass%202.x/2.57.1/KeePass-2.57.1.msi/download"
       },
-      "version": "2.57",
+      "version": "2.57.1",
       "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "rating": "4",
       "category": "desktop",
@@ -1565,10 +1565,10 @@
     "libreoffice": {
       "installer": {
         "kind": "msi",
-        "x86": "https://download.documentfoundation.org/libreoffice/stable/24.8.0/win/x86/LibreOffice_24.8.0_Win_x86.msi",
-        "x86_64": "https://download.documentfoundation.org/libreoffice/stable/24.8.0/win/x86_64/LibreOffice_24.8.0_Win_x86-64.msi"
+        "x86": "https://download.documentfoundation.org/libreoffice/stable/24.8.2/win/x86/LibreOffice_24.8.2_Win_x86.msi",
+        "x86_64": "https://download.documentfoundation.org/libreoffice/stable/24.8.2/win/x86_64/LibreOffice_24.8.2_Win_x86-64.msi"
       },
-      "version": "24.8.0",
+      "version": "24.8.2",
       "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "rating": "4",
       "category": "desktop",
@@ -1758,10 +1758,10 @@
             "/passive"
           ]
         },
-        "x86": "https://github.com/moonlight-stream/moonlight-qt/releases/download/v6.0.1/MoonlightSetup-6.0.1.exe",
-        "x86_64": "https://github.com/moonlight-stream/moonlight-qt/releases/download/v6.0.1/MoonlightSetup-6.0.1.exe"
+        "x86": "https://github.com/moonlight-stream/moonlight-qt/releases/download/v6.1.0/MoonlightSetup-6.1.0.exe",
+        "x86_64": "https://github.com/moonlight-stream/moonlight-qt/releases/download/v6.1.0/MoonlightSetup-6.1.0.exe"
       },
-      "version": "6.0.1",
+      "version": "6.1.0",
       "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "rating": "4",
       "category": "desktop",
@@ -1771,9 +1771,9 @@
     "mountainduck": {
       "installer": {
         "kind": "msi",
-        "x86": "https://dist.mountainduck.io/Mountain%20Duck%20Installer-4.16.2.22310.msi"
+        "x86": "https://dist.mountainduck.io/Mountain%20Duck%20Installer-4.16.3.22374.msi"
       },
-      "version": "4.16.2.22310",
+      "version": "4.16.3.22374",
       "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "rating": "4",
       "category": "desktop",
@@ -2117,10 +2117,10 @@
             "{{.SYSTEMDRIVE}}\\PHP\\php-win.exe"
           ]
         },
-        "x86": "https://windows.php.net/downloads/releases/php-8.3.11-nts-Win32-vs16-x86.zip",
-        "x86_64": "https://windows.php.net/downloads/releases/php-8.3.11-nts-Win32-vs16-x64.zip"
+        "x86": "https://windows.php.net/downloads/releases/php-8.3.13-nts-Win32-vs16-x86.zip",
+        "x86_64": "https://windows.php.net/downloads/releases/php-8.3.13-nts-Win32-vs16-x64.zip"
       },
-      "version": "8.3.11",
+      "version": "8.3.13",
       "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "rating": "4",
       "category": "desktop",
@@ -2167,9 +2167,9 @@
             "/norestart"
           ]
         },
-        "x86": "https://downloads.plex.tv/plex-media-server-new/1.40.5.8921-836b34c27/windows/PlexMediaServer-1.40.5.8921-836b34c27-x86.exe"
+        "x86": "https://downloads.plex.tv/plex-media-server-new/1.41.1.9057-af5eaea7a/windows/PlexMediaServer-1.41.1.9057-af5eaea7a-x86.exe"
       },
-      "version": "1.40.5.8921",
+      "version": "1.41.1.9057",
       "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "rating": "4",
       "category": "desktop",
@@ -2236,9 +2236,9 @@
     "pycharm-community": {
       "installer": {
         "kind": "nsis",
-        "x86": "https://download.jetbrains.com/python/pycharm-community-2024.2.1.exe"
+        "x86": "https://download.jetbrains.com/python/pycharm-community-2024.2.4.exe"
       },
-      "version": "2024.2.1",
+      "version": "2024.2.4",
       "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "rating": "4",
       "category": "desktop",
@@ -2274,10 +2274,10 @@
             "InstallAllUsers=1"
           ]
         },
-        "x86": "https://www.python.org/ftp/python/3.12.5/python-3.12.5.exe",
-        "x86_64": "https://www.python.org/ftp/python/3.12.5/python-3.12.5-amd64.exe"
+        "x86": "https://www.python.org/ftp/python/3.13.0/python-3.13.0.exe",
+        "x86_64": "https://www.python.org/ftp/python/3.13.0/python-3.13.0-amd64.exe"
       },
-      "version": "3.12.5",
+      "version": "3.13.0",
       "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "rating": "4",
       "category": "desktop",
@@ -2295,10 +2295,10 @@
             "Include_tcltk=0"
           ]
         },
-        "x86": "https://www.python.org/ftp/python/3.12.5/python-3.12.5.exe",
-        "x86_64": "https://www.python.org/ftp/python/3.12.5/python-3.12.5-amd64.exe"
+        "x86": "https://www.python.org/ftp/python/3.13.0/python-3.13.0.exe",
+        "x86_64": "https://www.python.org/ftp/python/3.13.0/python-3.13.0-amd64.exe"
       },
-      "version": "3.12.5",
+      "version": "3.13.0",
       "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "rating": "4",
       "category": "desktop",
@@ -2312,9 +2312,9 @@
           "extension": ".exe"
         },
         "x86": "https://deac-fra.dl.sourceforge.net/project/qbittorrent/qbittorrent-win32/qbittorrent-4.4.5/qbittorrent_4.4.5_setup.exe",
-        "x86_64": "https://deac-fra.dl.sourceforge.net/project/qbittorrent/qbittorrent-win32/qbittorrent-4.6.6/qbittorrent_4.6.6_x64_setup.exe"
+        "x86_64": "https://deac-fra.dl.sourceforge.net/project/qbittorrent/qbittorrent-win32/qbittorrent-5.0.1/qbittorrent_5.0.1_x64_setup.exe"
       },
-      "version": "4.6.6",
+      "version": "5.0.1",
       "icon": "https://static.filehorse.com/icons/file-transfer-and-networking/qbittorrent-icon-32.png",
       "rating": "5",
       "category": "desktop",
@@ -2415,9 +2415,9 @@
         "options": {
           "destination": "{{.PROGRAMFILES_X86}}\\Rufus\\rufus.exe"
         },
-        "x86": "https://github.com/pbatard/rufus/releases/download/v4.5/rufus-4.5.exe"
+        "x86": "https://github.com/pbatard/rufus/releases/download/v4.6/rufus-4.6.exe"
       },
-      "version": "4.5",
+      "version": "4.6",
       "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "rating": "4",
       "category": "desktop",
@@ -2439,9 +2439,9 @@
     "seafile-client": {
       "installer": {
         "kind": "msi",
-        "x86": "https://s3.eu-central-1.amazonaws.com/download.seadrive.org/seafile-9.0.8-en.msi"
+        "x86": "https://s3.eu-central-1.amazonaws.com/download.seadrive.org/seafile-9.0.9-en.msi"
       },
-      "version": "9.0.8",
+      "version": "9.0.9",
       "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "rating": "4",
       "category": "desktop",
@@ -2451,9 +2451,9 @@
     "signal": {
       "installer": {
         "kind": "nsis",
-        "x86": "https://updates.signal.org/desktop/signal-desktop-win-7.22.2.exe"
+        "x86": "https://updates.signal.org/desktop/signal-desktop-win-7.31.0.exe"
       },
-      "version": "7.22.2",
+      "version": "7.31.0",
       "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "rating": "4",
       "category": "desktop",
@@ -2463,9 +2463,9 @@
     "simplenote": {
       "installer": {
         "kind": "nsis",
-        "x86": "https://github.com/Automattic/simplenote-electron/releases/download/v2.22.1/Simplenote-win-2.22.1.exe"
+        "x86": "https://github.com/Automattic/simplenote-electron/releases/download/v2.22.2/Simplenote-win-2.22.2.exe"
       },
-      "version": "2.22.1",
+      "version": "2.22.2",
       "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "rating": "4",
       "category": "desktop",
@@ -2721,10 +2721,10 @@
     "tor-browser": {
       "installer": {
         "kind": "nsis",
-        "x86": "https://dist.torproject.org/torbrowser/13.5.2/tor-browser-windows-i686-portable-13.5.2.exe",
-        "x86_64": "https://dist.torproject.org/torbrowser/13.5.2/tor-browser-windows-x86_64-portable-13.5.2.exe"
+        "x86": "https://dist.torproject.org/torbrowser/14.0.1/tor-browser-windows-i686-portable-14.0.1.exe",
+        "x86_64": "https://dist.torproject.org/torbrowser/14.0.1/tor-browser-windows-x86_64-portable-14.0.1.exe"
       },
-      "version": "13.5.2",
+      "version": "14.0.1",
       "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "rating": "4",
       "category": "desktop",
@@ -2747,10 +2747,10 @@
     "tortoisegit": {
       "installer": {
         "kind": "msi",
-        "x86": "https://download.tortoisegit.org/tgit/2.16.0.0/TortoiseGit-2.16.0.0-32bit.msi",
-        "x86_64": "https://download.tortoisegit.org/tgit/2.16.0.0/TortoiseGit-2.16.0.0-64bit.msi"
+        "x86": "https://download.tortoisegit.org/tgit/2.17.0.0/TortoiseGit-2.17.0.0-32bit.msi",
+        "x86_64": "https://download.tortoisegit.org/tgit/2.17.0.0/TortoiseGit-2.17.0.0-64bit.msi"
       },
-      "version": "2.16.0.0",
+      "version": "2.17.0.0",
       "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "rating": "4",
       "category": "desktop",
@@ -2985,9 +2985,9 @@
             "{{.PROGRAMFILES}}\\Oracle\\VirtualBox\\VBoxManage.exe"
           ]
         },
-        "x86": "https://download.virtualbox.org/virtualbox/7.0.20/VirtualBox-7.0.20-163906-Win.exe"
+        "x86": "https://download.virtualbox.org/virtualbox/7.1.4/VirtualBox-7.1.4-165100-Win.exe"
       },
-      "version": "7.0.20",
+      "version": "7.1.4",
       "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "rating": "4",
       "category": "desktop",
@@ -3192,10 +3192,10 @@
             "--vivaldi-update"
           ]
         },
-        "x86": "https://downloads.vivaldi.com/stable/Vivaldi.6.9.3447.37.arm64.exe",
-        "x86_64": "https://downloads.vivaldi.com/stable/Vivaldi.6.9.3447.37.x64.exe"
+        "x86": "https://downloads.vivaldi.com/stable/Vivaldi.7.0.3495.10.arm64.exe",
+        "x86_64": "https://downloads.vivaldi.com/stable/Vivaldi.7.0.3495.10.x64.exe"
       },
-      "version": "6.9.3447.37",
+      "version": "7.0.3495.10",
       "icon": "https://static.filehorse.com/icons/browsers-and-plugins/vivaldi-icon-32.png",
       "rating": "4.0",
       "category": "browsers",
@@ -3288,9 +3288,9 @@
     "windows-terminal": {
       "installer": {
         "kind": "appx",
-        "x86_64": "https://github.com/microsoft/terminal/releases/download/v1.21.2361.0/Microsoft.WindowsTerminal_1.21.2361.0_8wekyb3d8bbwe.msixbundle"
+        "x86_64": "https://github.com/microsoft/terminal/releases/download/v1.21.2911.0/Microsoft.WindowsTerminal_1.21.2911.0_8wekyb3d8bbwe.msixbundle"
       },
-      "version": "1.21.2361.0",
+      "version": "1.21.2911.0",
       "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "rating": "4",
       "category": "desktop",
@@ -3322,9 +3322,9 @@
         "options": {
           "extension": ".exe"
         },
-        "x86": "https://sourceforge.net/projects/winscp/files/WinSCP/6.3.4/WinSCP-6.3.4-Setup.exe/download"
+        "x86": "https://sourceforge.net/projects/winscp/files/WinSCP/6.3.5/WinSCP-6.3.5-Setup.exe/download"
       },
-      "version": "6.3.4",
+      "version": "6.3.5",
       "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "rating": "4",
       "category": "desktop",
