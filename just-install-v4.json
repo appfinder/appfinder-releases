@@ -199,7 +199,7 @@
         "x86": "https://repo.anaconda.com/archive/Anaconda3-2022.05-Windows-x86.exe",
         "x86_64": "https://repo.anaconda.com/archive/Anaconda3-2024.10-1-Windows-x86_64.exe"
       },
-      "version": "2024.10-1",
+      "version": "3-2024.10-1",
       "icon": "https://static.filehorse.com/icons/developer-tools/anaconda-icon-32.png",
       "rating": "4.1",
       "category": "developer",
@@ -209,9 +209,9 @@
     "android-studio-ide": {
       "installer": {
         "kind": "nsis",
-        "x86_64": "https://redirector.gvt1.com/edgedl/android/studio/install/2024.2.1.12/android-studio-2024.2.1.12-windows.exe"
+        "x86_64": "https://redirector.gvt1.com/edgedl/android/studio/install/2024.2.2.13/android-studio-2024.2.2.13-windows.exe"
       },
-      "version": "2024.2.1.12",
+      "version": "2024.2.2.13",
       "icon": "https://static.filehorse.com/icons/developer-tools/android-studio-icon-32.png",
       "rating": "4.5",
       "category": "developer",
@@ -432,9 +432,9 @@
     "bootnext": {
       "installer": {
         "kind": "msi",
-        "x86_64": "https://ci.appveyor.com/api/buildjobs/tavs2bh1g3scd1qh/artifacts/installer%2Fbin%2Fx64%2FRelease%2Fbootnext.msi"
+        "x86_64": "https://ci.appveyor.com/api/buildjobs/w2g1gp4e3n10670a/artifacts/installer%2Fbin%2Fx64%2FRelease%2Fbootnext.msi"
       },
-      "version": "1.0.86",
+      "version": "1.0.87",
       "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "rating": "4",
       "category": "desktop",
@@ -540,9 +540,9 @@
     "clementine-player": {
       "installer": {
         "kind": "nsis",
-        "x86": "https://github.com/clementine-player/Clementine/releases/download/1.4.1-18-g4ab6f35ec/ClementineSetup-1.4.1-18-g4ab6f35ec.exe"
+        "x86": "https://github.com/clementine-player/Clementine/releases/download/1.4.1-27-g658f34ec4/ClementineSetup-1.4.1-27-g658f34ec4.exe"
       },
-      "version": "1.4.1-18-g4ab6f35ec",
+      "version": "1.4.1-27-g658f34ec4",
       "icon": "https://static.filehorse.com/icons/mp3-and-audio/clementine-music-player-icon-32.png",
       "rating": "3.8",
       "category": "multimedia",
@@ -555,7 +555,7 @@
         "x86": "https://github.com/Kitware/CMake/releases/download/v3.31.0-rc3/cmake-3.31.0-rc3-windows-i386.msi",
         "x86_64": "https://github.com/Kitware/CMake/releases/download/v3.31.0-rc3/cmake-3.31.0-rc3-windows-x86_64.msi"
       },
-      "version": "3.31.3",
+      "version": "3.31.4",
       "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "rating": "4",
       "category": "desktop",
@@ -1020,7 +1020,7 @@
         "x86": "https://github.com/erlang/otp/releases/download/OTP-27.2/otp_win32_27.2.exe",
         "x86_64": "https://github.com/erlang/otp/releases/download/OTP-27.2/otp_win64_27.2.exe"
       },
-      "version": "27.2",
+      "version": "27",
       "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "rating": "4",
       "category": "desktop",
@@ -1847,10 +1847,10 @@
     "node": {
       "installer": {
         "kind": "msi",
-        "x86": "https://nodejs.org/dist/v21.5.0/node-v21.5.0-x86.msi",
-        "x86_64": "https://nodejs.org/dist/v21.5.0/node-v21.5.0-x64.msi"
+        "x86": "https://nodejs.org/dist/v23.6.0/node-v23.6.0-x64.msi",
+        "x86_64": "https://nodejs.org/dist/v22.13.0/node-v22.13.0-x86.msi"
       },
-      "version": "21.5.0",
+      "version": "23.6.0",
       "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "rating": "4",
       "category": "desktop",
@@ -1860,10 +1860,9 @@
     "node-lts": {
       "installer": {
         "kind": "msi",
-        "x86": "https://nodejs.org/dist/v20.10.0/node-v20.10.0-x86.msi",
-        "x86_64": "https://nodejs.org/dist/v20.10.0/node-v20.10.0-x64.msi"
+        "x86_64": "https://nodejs.org/dist/v22.13.0/node-v22.13.0-x86.msi"
       },
-      "version": "20.10.0",
+      "version": "22.13.0",
       "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "rating": "4",
       "category": "desktop",
@@ -2399,10 +2398,10 @@
     "retroarch": {
       "installer": {
         "kind": "nsis",
-        "x86": "https://buildbot.libretro.com/stable/1.19.1/windows/x86/RetroArch-Win32-setup.exe",
-        "x86_64": "https://buildbot.libretro.com/stable/1.19.1/windows/x86_64/RetroArch-Win64-setup.exe"
+        "x86": "https://buildbot.libretro.com/stable/1.20.0/windows/x86/RetroArch-Win32-setup.exe",
+        "x86_64": "https://buildbot.libretro.com/stable/1.20.0/windows/x86_64/RetroArch-Win64-setup.exe"
       },
-      "version": "1.19.1",
+      "version": "1.20.0",
       "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "rating": "4",
       "category": "desktop",
@@ -2451,9 +2450,9 @@
     "signal": {
       "installer": {
         "kind": "nsis",
-        "x86": "https://updates.signal.org/desktop/signal-desktop-win-7.36.1.exe"
+        "x86": "https://updates.signal.org/desktop/signal-desktop-win-7.37.0.exe"
       },
-      "version": "7.36.1",
+      "version": "7.37.0",
       "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "rating": "4",
       "category": "desktop",
@@ -3192,10 +3191,10 @@
             "--vivaldi-update"
           ]
         },
-        "x86": "https://downloads.vivaldi.com/stable/Vivaldi.7.0.3495.27.arm64.exe",
-        "x86_64": "https://downloads.vivaldi.com/stable/Vivaldi.7.0.3495.27.x64.exe"
+        "x86": "https://downloads.vivaldi.com/stable/Vivaldi.7.0.3495.29.arm64.exe",
+        "x86_64": "https://downloads.vivaldi.com/stable/Vivaldi.7.0.3495.29.x64.exe"
       },
-      "version": "7.0.3495.27",
+      "version": "7.0.3495.29",
       "icon": "https://static.filehorse.com/icons/browsers-and-plugins/vivaldi-icon-32.png",
       "rating": "4.0",
       "category": "browsers",
