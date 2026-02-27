@@ -5,9 +5,12 @@
       "category": "security",
       "icon": "https://static.filehorse.com/icons/firewalls-and-security/1password-icon-32.png",
       "installer": {
-        "kind": "innosetup",
+        "kind": "custom",
         "options": {
-          "extension": ".exe"
+          "arguments": [
+            "{{.installer}}",
+            "--silent"
+          ]
         },
         "x86": "https://c.1password.com/dist/1P/win6/1PasswordSetup-7.9.835.exe"
       },
@@ -16,8 +19,8 @@
       "tag": [],
       "title": "1Password",
       "uninstallCMD": [
-        "{{.installer}}",
-        "/S"
+        "%LocalAppData%\\1Password\\app\\8\\1Password.exe",
+        "--uninstall"
       ],
       "version": "7.9.835"
     },
