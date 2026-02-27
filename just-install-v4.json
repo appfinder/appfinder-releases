@@ -1,8 +1,9 @@
 {
   "$schema": "./just-install-v4.schema.json",
-  "version": 4,
   "packages": {
     "1password": {
+      "category": "security",
+      "icon": "https://static.filehorse.com/icons/firewalls-and-security/1password-icon-32.png",
       "installer": {
         "kind": "innosetup",
         "options": {
@@ -10,129 +11,181 @@
         },
         "x86": "https://c.1password.com/dist/1P/win6/1PasswordSetup-7.9.835.exe"
       },
-      "version": "7.9.835",
-      "icon": "https://static.filehorse.com/icons/firewalls-and-security/1password-icon-32.png",
-      "rating": "3.2",
-      "category": "security",
       "licence": "Trial",
+      "rating": "3.2",
+      "tag": [],
       "title": "1Password",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "7.9.835"
     },
     "7zip": {
+      "category": "desktop",
+      "icon": "https://www.7-zip.org/7ziplogo.png",
       "installer": {
         "kind": "msi",
-        "x86": "https://www.7-zip.org/a/7z2409.msi",
-        "x86_64": "https://www.7-zip.org/a/7z2409-x64.msi"
+        "x86": "https://www.7-zip.org/a/7z2600.msi",
+        "x86_64": "https://www.7-zip.org/a/7z2600-x64.msi"
       },
-      "version": "24.09",
-      "icon": "https://www.7-zip.org/7ziplogo.png",
-      "rating": "5",
-      "category": "desktop",
       "licence": "Open source",
-      "title": "7-Zip",
+      "rating": "5",
       "tag": [
         "featured"
-      ]
+      ],
+      "title": "7-Zip",
+      "uninstallCMD": [
+        "msiexec.exe",
+        "/qn",
+        "/x",
+        "{{.installer}}"
+      ],
+      "version": "26.00"
     },
     "adoptopenjdk-13-jdk": {
+      "category": "developer",
+      "icon": "https://adoptium.net/images/vendors/vendor-adoptium.png",
       "installer": {
         "kind": "msi",
         "x86": "https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.2%2B8/OpenJDK13U-jdk_x86-32_windows_hotspot_13.0.2_8.msi",
         "x86_64": "https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.2%2B8/OpenJDK13U-jdk_x64_windows_hotspot_13.0.2_8.msi"
       },
-      "version": "13.0.2+8",
-      "icon": "https://adoptium.net/images/vendors/vendor-adoptium.png",
-      "rating": "3.7",
-      "category": "developer",
       "licence": "Open source",
+      "rating": "3.7",
+      "tag": [],
       "title": "AdoptOpenJDK 13 JDK",
-      "tag": []
+      "uninstallCMD": [
+        "msiexec.exe",
+        "/qn",
+        "/x",
+        "{{.installer}}"
+      ],
+      "version": "13.0.2+8"
     },
     "adoptopenjdk-13-jre": {
+      "category": "developer",
+      "icon": "https://adoptium.net/images/vendors/vendor-adoptium.png",
       "installer": {
         "kind": "msi",
         "x86": "https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.2%2B8/OpenJDK13U-jre_x86-32_windows_hotspot_13.0.2_8.msi",
         "x86_64": "https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.2%2B8/OpenJDK13U-jre_x64_windows_hotspot_13.0.2_8.msi"
       },
-      "version": "13.0.2+8",
-      "icon": "https://adoptium.net/images/vendors/vendor-adoptium.png",
-      "rating": "3.7",
-      "category": "developer",
       "licence": "Open source",
+      "rating": "3.7",
+      "tag": [],
       "title": "AdoptOpenJDK 13 JRE",
-      "tag": []
+      "uninstallCMD": [
+        "msiexec.exe",
+        "/qn",
+        "/x",
+        "{{.installer}}"
+      ],
+      "version": "13.0.2+8"
     },
     "adoptopenjdk-14-jdk": {
+      "category": "developer",
+      "icon": "https://adoptium.net/images/vendors/vendor-adoptium.png",
       "installer": {
         "kind": "msi",
         "x86": "https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_x86-32_windows_hotspot_14.0.2_12.msi",
         "x86_64": "https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_x64_windows_hotspot_14.0.2_12.msi"
       },
-      "version": "14.0.2+12",
-      "icon": "https://adoptium.net/images/vendors/vendor-adoptium.png",
-      "rating": "3.7",
-      "category": "developer",
       "licence": "Open source",
+      "rating": "3.7",
+      "tag": [],
       "title": "AdoptOpenJDK 14 JDK",
-      "tag": []
+      "uninstallCMD": [
+        "msiexec.exe",
+        "/qn",
+        "/x",
+        "{{.installer}}"
+      ],
+      "version": "14.0.2+12"
     },
     "adoptopenjdk-14-jre": {
+      "category": "developer",
+      "icon": "https://adoptium.net/images/vendors/vendor-adoptium.png",
       "installer": {
         "kind": "msi",
         "x86": "https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jre_x86-32_windows_hotspot_14.0.2_12.msi",
         "x86_64": "https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jre_x64_windows_hotspot_14.0.2_12.msi"
       },
-      "version": "14.0.2+12",
-      "icon": "https://adoptium.net/images/vendors/vendor-adoptium.png",
-      "rating": "3.7",
-      "category": "developer",
       "licence": "Open source",
+      "rating": "3.7",
+      "tag": [],
       "title": "AdoptOpenJDK 14 JRE",
-      "tag": []
+      "uninstallCMD": [
+        "msiexec.exe",
+        "/qn",
+        "/x",
+        "{{.installer}}"
+      ],
+      "version": "14.0.2+12"
     },
     "adoptopenjdk-15-jdk": {
+      "category": "developer",
+      "icon": "https://adoptium.net/images/vendors/vendor-adoptium.png",
       "installer": {
         "kind": "msi",
         "x86": "https://github.com/AdoptOpenJDK/openjdk15-binaries/releases/download/jdk-15.0.1%2B9/OpenJDK15U-jdk_x86-32_windows_hotspot_15.0.1_9.msi",
         "x86_64": "https://github.com/AdoptOpenJDK/openjdk15-binaries/releases/download/jdk-15.0.1%2B9/OpenJDK15U-jdk_x64_windows_hotspot_15.0.1_9.msi"
       },
-      "version": "15.0.1+9",
-      "icon": "https://adoptium.net/images/vendors/vendor-adoptium.png",
-      "rating": "3.7",
-      "category": "developer",
       "licence": "Open source",
+      "rating": "3.7",
+      "tag": [],
       "title": "AdoptOpenJDK 15 JDK",
-      "tag": []
+      "uninstallCMD": [
+        "msiexec.exe",
+        "/qn",
+        "/x",
+        "{{.installer}}"
+      ],
+      "version": "15.0.1+9"
     },
     "adoptopenjdk-15-jre": {
+      "category": "developer",
+      "icon": "https://adoptium.net/images/vendors/vendor-adoptium.png",
       "installer": {
         "kind": "msi",
         "x86": "https://github.com/AdoptOpenJDK/openjdk15-binaries/releases/download/jdk-15.0.1%2B9/OpenJDK15U-jre_x86-32_windows_hotspot_15.0.1_9.msi",
         "x86_64": "https://github.com/AdoptOpenJDK/openjdk15-binaries/releases/download/jdk-15.0.1%2B9/OpenJDK15U-jre_x64_windows_hotspot_15.0.1_9.msi"
       },
-      "version": "15.0.1+9",
-      "icon": "https://adoptium.net/images/vendors/vendor-adoptium.png",
-      "rating": "3.7",
-      "category": "developer",
       "licence": "Open source",
+      "rating": "3.7",
+      "tag": [],
       "title": "AdoptOpenJDK 15 JRE",
-      "tag": []
+      "uninstallCMD": [
+        "msiexec.exe",
+        "/qn",
+        "/x",
+        "{{.installer}}"
+      ],
+      "version": "15.0.1+9"
     },
     "adoptopenjdk-16-jdk": {
+      "category": "developer",
+      "icon": "https://adoptium.net/images/vendors/vendor-adoptium.png",
       "installer": {
         "kind": "msi",
         "x86": "https://github.com/adoptium/temurin16-binaries/releases/download/jdk-16.0.2%2B7/OpenJDK16U-jdk_x86-32_windows_hotspot_16.0.2_7.msi",
         "x86_64": "https://github.com/adoptium/temurin16-binaries/releases/download/jdk-16.0.2%2B7/OpenJDK16U-jdk_x64_windows_hotspot_16.0.2_7.msi"
       },
-      "version": "16.0.2+7",
-      "icon": "https://adoptium.net/images/vendors/vendor-adoptium.png",
-      "rating": "3.7",
-      "category": "developer",
       "licence": "Open source",
+      "rating": "3.7",
+      "tag": [],
       "title": "AdoptOpenJDK 16 JDK",
-      "tag": []
+      "uninstallCMD": [
+        "msiexec.exe",
+        "/qn",
+        "/x",
+        "{{.installer}}"
+      ],
+      "version": "16.0.2+7"
     },
     "aescrypt-cli": {
+      "category": "security",
+      "icon": "https://play-lh.googleusercontent.com/H0HNvhfptM8LfRuqrJQ_cwvPjQPiBiYQij0VAMFtzh_pfaMzQExq-wQ61s6K7MziKpO-",
       "installer": {
         "kind": "zip",
         "options": {
@@ -143,15 +196,19 @@
         },
         "x86": "https://www.aescrypt.com/download/v3/windows/AESCrypt_console_v{{.version}}_win32.zip"
       },
-      "version": "310",
-      "icon": "https://play-lh.googleusercontent.com/H0HNvhfptM8LfRuqrJQ_cwvPjQPiBiYQij0VAMFtzh_pfaMzQExq-wQ61s6K7MziKpO-",
-      "rating": "4.2",
-      "category": "security",
       "licence": "Open Source",
+      "rating": "4.2",
+      "tag": [],
       "title": "AESCrypt CLI",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "310"
     },
     "aescrypt-gui": {
+      "category": "security",
+      "icon": "https://play-lh.googleusercontent.com/H0HNvhfptM8LfRuqrJQ_cwvPjQPiBiYQij0VAMFtzh_pfaMzQExq-wQ61s6K7MziKpO-",
       "installer": {
         "kind": "msi",
         "options": {
@@ -171,108 +228,150 @@
         "x86": "https://www.aescrypt.com/download/v3/windows/AESCrypt_v{{.version}}_win32.zip",
         "x86_64": "https://www.aescrypt.com/download/v3/windows/AESCrypt_v{{.version}}_x64.zip"
       },
-      "version": "310",
-      "icon": "https://play-lh.googleusercontent.com/H0HNvhfptM8LfRuqrJQ_cwvPjQPiBiYQij0VAMFtzh_pfaMzQExq-wQ61s6K7MziKpO-",
-      "rating": "4.3",
-      "category": "security",
       "licence": "Open Source",
+      "rating": "4.3",
+      "tag": [],
       "title": "AESCrypt GUI",
-      "tag": []
+      "uninstallCMD": [
+        "msiexec.exe",
+        "/qn",
+        "/x",
+        "{{.installer}}"
+      ],
+      "version": "310"
     },
     "amazon-corretto-11": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "msi",
         "x86_64": "https://corretto.aws/downloads/latest/amazon-corretto-11-x64-windows-jdk.msi"
       },
-      "version": "latest",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Amazon Corretto 11",
-      "tag": []
+      "uninstallCMD": [
+        "msiexec.exe",
+        "/qn",
+        "/x",
+        "{{.installer}}"
+      ],
+      "version": "latest"
     },
     "amazon-corretto-8": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "msi",
         "x86": "https://corretto.aws/downloads/latest/amazon-corretto-8-x86-windows-jdk.msi",
         "x86_64": "https://corretto.aws/downloads/latest/amazon-corretto-8-x64-windows-jdk.msi"
       },
-      "version": "latest",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Amazon Corretto 8",
-      "tag": []
+      "uninstallCMD": [
+        "msiexec.exe",
+        "/qn",
+        "/x",
+        "{{.installer}}"
+      ],
+      "version": "latest"
     },
     "anaconda": {
+      "category": "developer",
+      "icon": "https://static.filehorse.com/icons/developer-tools/anaconda-icon-32.png",
       "installer": {
         "kind": "nsis",
         "x86": "https://repo.anaconda.com/archive/Anaconda3-2022.05-Windows-x86.exe",
-        "x86_64": "https://repo.anaconda.com/archive/Anaconda3-2024.10-1-Windows-x86_64.exe"
+        "x86_64": "https://repo.anaconda.com/archive/Anaconda3-2025.12-2-Windows-x86_64.exe"
       },
-      "version": "3-2024.10-1",
-      "icon": "https://static.filehorse.com/icons/developer-tools/anaconda-icon-32.png",
-      "rating": "4.1",
-      "category": "developer",
       "licence": "Open source",
+      "rating": "4.1",
+      "tag": [],
       "title": "Anaconda",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "3-2025.12-2"
     },
     "android-studio-ide": {
+      "category": "developer",
+      "icon": "https://static.filehorse.com/icons/developer-tools/android-studio-icon-32.png",
       "installer": {
         "kind": "nsis",
-        "x86_64": "https://redirector.gvt1.com/edgedl/android/studio/install/2024.3.1.13/android-studio-2024.3.1.13-windows.exe"
+        "x86_64": "https://edgedl.me.gvt1.com/android/studio/install/2025.3.1.8/android-studio-panda1-patch1-windows.exe"
       },
-      "version": "2024.3.1.13",
-      "icon": "https://static.filehorse.com/icons/developer-tools/android-studio-icon-32.png",
-      "rating": "4.5",
-      "category": "developer",
       "licence": "Freeware",
+      "rating": "4.5",
+      "tag": [],
       "title": "Android Studio IDE",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "2025.3.1.8"
     },
     "antimicro": {
+      "category": "desktop",
+      "icon": "https://github.com/AntiMicroX/antimicrox/raw/master/src/images/antimicrox.png",
       "installer": {
         "kind": "msi",
         "x86": "https://github.com/AntiMicro/antimicro/releases/download/{{.version}}/antimicro-{{.version}}-win32.msi"
       },
-      "version": "2.23",
-      "icon": "https://github.com/AntiMicroX/antimicrox/raw/master/src/images/antimicrox.png",
-      "rating": "4.6",
-      "category": "desktop",
       "licence": "Open Source",
+      "rating": "4.6",
+      "tag": [],
       "title": "AntiMicro",
-      "tag": []
+      "uninstallCMD": [
+        "msiexec.exe",
+        "/qn",
+        "/x",
+        "{{.installer}}"
+      ],
+      "version": "2.23"
     },
     "anydesk": {
+      "category": "desktop",
+      "icon": "https://static.filehorse.com/icons/file-transfer-and-networking/anydesk-icon-32.png",
       "installer": {
         "kind": "msi",
         "x86": "https://download.anydesk.com/AnyDesk.msi"
       },
-      "version": "latest",
-      "icon": "https://static.filehorse.com/icons/file-transfer-and-networking/anydesk-icon-32.png",
-      "rating": "4.3",
-      "category": "desktop",
       "licence": "Trial",
+      "rating": "4.3",
+      "tag": [],
       "title": "AnyDesk",
-      "tag": []
+      "uninstallCMD": [
+        "msiexec.exe",
+        "/qn",
+        "/x",
+        "{{.installer}}"
+      ],
+      "version": "latest"
     },
     "arduino": {
+      "category": "desktop",
+      "icon": "https://static.filehorse.com/icons/developer-tools/arduino-icon-32.png",
       "installer": {
         "kind": "nsis",
         "x86": "https://downloads.arduino.cc/arduino-1.8.19-windows.exe"
       },
-      "version": "1.8.19",
-      "icon": "https://static.filehorse.com/icons/developer-tools/arduino-icon-32.png",
-      "rating": "4.0",
-      "category": "desktop",
       "licence": "Open Source",
+      "rating": "4.0",
+      "tag": [],
       "title": "Arduino",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "1.8.19"
     },
     "atom": {
+      "category": "developer",
+      "icon": "https://static.filehorse.com/icons/developer-tools/atom-icon-32.png",
       "installer": {
         "kind": "squirrel",
         "options": {
@@ -281,42 +380,54 @@
         "x86": "https://atom.io/download/windows",
         "x86_64": "https://atom.io/download/windows_x64"
       },
-      "version": "latest",
-      "icon": "https://static.filehorse.com/icons/developer-tools/atom-icon-32.png",
-      "rating": "4.0",
-      "category": "developer",
       "licence": "Open Source",
+      "rating": "4.0",
+      "tag": [],
       "title": "Atom",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "latest"
     },
     "audacity": {
+      "category": "multimedia",
+      "icon": "https://static.filehorse.com/icons/mp3-and-audio/audacity-icon-32.png",
       "installer": {
         "kind": "innosetup",
-        "x86": "https://github.com/audacity/audacity/releases/download/Audacity-3.7.1/audacity-win-3.7.1-32bit.exe",
-        "x86_64": "https://github.com/audacity/audacity/releases/download/Audacity-3.7.1/audacity-win-3.7.1-64bit.exe"
+        "x86": "https://github.com/audacity/audacity/releases/download/Audacity-3.7.7/audacity-win-3.7.7-32bit.exe",
+        "x86_64": "https://github.com/audacity/audacity/releases/download/Audacity-3.7.7/audacity-win-3.7.7-64bit.exe"
       },
-      "version": "3.7.1",
-      "icon": "https://static.filehorse.com/icons/mp3-and-audio/audacity-icon-32.png",
-      "rating": "4.0",
-      "category": "multimedia",
       "licence": "Open Source",
+      "rating": "4.0",
+      "tag": [],
       "title": "Audacity",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "3.7.7"
     },
     "autohotkey": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "nsis",
         "x86": "https://autohotkey.com/download/ahk-install.exe"
       },
-      "version": "latest",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "AutoHotkey",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "latest"
     },
     "autoruns": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "zip",
         "options": {
@@ -324,29 +435,39 @@
         },
         "x86": "https://download.sysinternals.com/files/Autoruns.zip"
       },
-      "version": "latest",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Autoruns",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "latest"
     },
     "aws-cli": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "msi",
         "x86": "https://s3.amazonaws.com/aws-cli/AWSCLI32.msi",
         "x86_64": "https://s3.amazonaws.com/aws-cli/AWSCLI64.msi"
       },
-      "version": "latest",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "AWS CLI",
-      "tag": []
+      "uninstallCMD": [
+        "msiexec.exe",
+        "/qn",
+        "/x",
+        "{{.installer}}"
+      ],
+      "version": "latest"
     },
     "axcrypt": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "custom",
         "options": {
@@ -357,15 +478,19 @@
         },
         "x86": "https://account.axcrypt.net/download/axcrypt-2-setup.exe"
       },
-      "version": "latest",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "AxCrypt",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "latest"
     },
     "azcopy": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "msi",
         "options": {
@@ -373,15 +498,21 @@
         },
         "x86": "https://aka.ms/downloadazcopy"
       },
-      "version": "latest",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "AzCopy",
-      "tag": []
+      "uninstallCMD": [
+        "msiexec.exe",
+        "/qn",
+        "/x",
+        "{{.installer}}"
+      ],
+      "version": "latest"
     },
     "azure-cli": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "msi",
         "options": {
@@ -389,44 +520,58 @@
         },
         "x86": "https://aka.ms/installazurecliwindows"
       },
-      "version": "latest",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Azure CLI",
-      "tag": []
+      "uninstallCMD": [
+        "msiexec.exe",
+        "/qn",
+        "/x",
+        "{{.installer}}"
+      ],
+      "version": "latest"
     },
     "bcuninstaller": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "innosetup",
-        "x86": "https://github.com/Klocman/Bulk-Crap-Uninstaller/releases/download/v5.8.3/BCUninstaller_5.8.3_setup.exe"
+        "x86": "https://github.com/Klocman/Bulk-Crap-Uninstaller/releases/download/v5.9/BCUninstaller_5.9.0_setup.exe"
       },
-      "version": "5.8.3",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Bulk Crap Uninstaller",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "5.9"
     },
     "bitwarden": {
+      "category": "security",
+      "icon": "https://static.filehorse.com/icons/firewalls-and-security/bitwarden-icon-32.png",
       "installer": {
         "kind": "nsis",
         "options": {
           "extension": ".exe"
         },
-        "x86": "https://vault.bitwarden.com/download/?app=desktop&platform=windows&variant=exe"
+        "x86": "https://vault.bitwarden.com/download/?app=desktop\u0026platform=windows\u0026variant=exe"
       },
-      "version": "latest",
-      "icon": "https://static.filehorse.com/icons/firewalls-and-security/bitwarden-icon-32.png",
-      "rating": "4.7",
-      "category": "security",
       "licence": "Freeware",
+      "rating": "4.7",
+      "tag": [],
       "title": "Bitwarden",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "latest"
     },
     "bleachbit": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "custom",
         "options": {
@@ -436,56 +581,79 @@
             "/S"
           ]
         },
-        "x86": "https://download.bleachbit.org/BleachBit-4.6.2-setup.exe"
+        "x86": "https://download.bleachbit.org/BleachBit-5.0.2-setup.exe"
       },
-      "version": "4.6.2",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "BleachBit",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/allusers",
+        "/S"
+      ],
+      "version": "5.0.2"
     },
     "blender": {
+      "category": "multimedia",
+      "icon": "https://static.filehorse.com/icons/imaging-and-digital-photo/blender-icon-32.png",
       "installer": {
         "kind": "msi",
         "x86_64": "https://download.blender.org/release/Blender4.3/blender-4.3.2-windows-x64.msi"
       },
-      "version": "4.3.2",
-      "icon": "https://static.filehorse.com/icons/imaging-and-digital-photo/blender-icon-32.png",
-      "rating": "4.2",
-      "category": "multimedia",
       "licence": "Open Source",
+      "rating": "4.2",
+      "tag": [],
       "title": "Blender",
-      "tag": []
+      "uninstallCMD": [
+        "msiexec.exe",
+        "/qn",
+        "/x",
+        "{{.installer}}"
+      ],
+      "version": "4.3.2"
     },
     "bootnext": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "msi",
         "x86_64": "https://ci.appveyor.com/api/buildjobs/ame0bqahh2u204x9/artifacts/installer%2Fbin%2Fx64%2FRelease%2Fbootnext.msi"
       },
-      "version": "1.0.89",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "BootNext",
-      "tag": []
+      "uninstallCMD": [
+        "msiexec.exe",
+        "/qn",
+        "/x",
+        "{{.installer}}"
+      ],
+      "version": "1.0.89"
     },
     "brackets": {
+      "category": "developer",
+      "icon": "https://static.filehorse.com/icons/developer-tools/brackets-icon-32.png",
       "installer": {
         "kind": "msi",
         "x86_64": "https://github.com/adobe/brackets/releases/download/release-1.14.2/Brackets.Release.1.14.2.msi"
       },
-      "version": "1.14.2",
-      "icon": "https://static.filehorse.com/icons/developer-tools/brackets-icon-32.png",
-      "rating": "4.0",
-      "category": "developer",
       "licence": "Freeware",
+      "rating": "4.0",
+      "tag": [],
       "title": "Brackets",
-      "tag": []
+      "uninstallCMD": [
+        "msiexec.exe",
+        "/qn",
+        "/x",
+        "{{.installer}}"
+      ],
+      "version": "1.14.2"
     },
     "brave": {
+      "category": "browsers",
+      "icon": "https://static.filehorse.com/icons/browsers-and-plugins/brave-browser-icon-32.png",
       "installer": {
         "kind": "as-is",
         "options": {
@@ -494,17 +662,21 @@
         "x86": "https://referrals.brave.com/latest/BraveBrowserSilentSetup32.exe",
         "x86_64": "https://referrals.brave.com/latest/BraveBrowserSilentSetup.exe"
       },
-      "version": "latest",
-      "icon": "https://static.filehorse.com/icons/browsers-and-plugins/brave-browser-icon-32.png",
-      "rating": "4.0",
-      "category": "browsers",
       "licence": "Open Source",
-      "title": "Brave",
+      "rating": "4.0",
       "tag": [
         "featured"
-      ]
+      ],
+      "title": "Brave",
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "latest"
     },
     "calibre": {
+      "category": "desktop",
+      "icon": "https://static.filehorse.com/icons/office-and-business-tools/calibre-icon-32.png",
       "installer": {
         "kind": "msi",
         "options": {
@@ -513,28 +685,40 @@
         "x86": "https://calibre-ebook.com/dist/win32",
         "x86_64": "https://calibre-ebook.com/dist/win64"
       },
-      "version": "latest",
-      "icon": "https://static.filehorse.com/icons/office-and-business-tools/calibre-icon-32.png",
-      "rating": "4.0",
-      "category": "desktop",
       "licence": "Open Source",
+      "rating": "4.0",
+      "tag": [],
       "title": "Calibre",
-      "tag": []
+      "uninstallCMD": [
+        "msiexec.exe",
+        "/qn",
+        "/x",
+        "{{.installer}}"
+      ],
+      "version": "latest"
     },
     "chrome-remote-desktop-host": {
+      "category": "desktop",
+      "icon": "https://static.filehorse.com/icons/file-transfer-and-networking/chrome-remote-desktop-icon-32.png",
       "installer": {
         "kind": "msi",
         "x86": "https://dl.google.com/dl/edgedl/chrome-remote-desktop/chromeremotedesktophost.msi"
       },
-      "version": "latest",
-      "icon": "https://static.filehorse.com/icons/file-transfer-and-networking/chrome-remote-desktop-icon-32.png",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Chrome Remote Desktop Host",
-      "tag": []
+      "uninstallCMD": [
+        "msiexec.exe",
+        "/qn",
+        "/x",
+        "{{.installer}}"
+      ],
+      "version": "latest"
     },
     "citrix-receiver": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "custom",
         "options": {
@@ -546,15 +730,20 @@
         },
         "x86": "https://downloadplugins.citrix.com/Windows/CitrixReceiver.exe"
       },
-      "version": "latest",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Citrix Receiver",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/silent",
+        "/noreboot"
+      ],
+      "version": "latest"
     },
     "classic-shell": {
+      "category": "desktop",
+      "icon": "https://static.filehorse.com/icons/desktop-enhancements/classic-shell-icon-32.png",
       "installer": {
         "kind": "custom",
         "options": {
@@ -566,76 +755,99 @@
         },
         "x86": "https://sourceforge.net/projects/classicshell/files/Version%204.3.1%20general%20release/ClassicShellSetup_4_3_1.exe/download"
       },
-      "version": "4.3.1",
-      "icon": "https://static.filehorse.com/icons/desktop-enhancements/classic-shell-icon-32.png",
-      "rating": "3.1",
-      "category": "desktop",
       "licence": "Open Source",
+      "rating": "3.1",
+      "tag": [],
       "title": "Classic Shell",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/qn",
+        "NOSTART=1"
+      ],
+      "version": "4.3.1"
     },
     "clementine-player": {
+      "category": "multimedia",
+      "icon": "https://static.filehorse.com/icons/mp3-and-audio/clementine-music-player-icon-32.png",
       "installer": {
         "kind": "nsis",
-        "x86": "https://github.com/clementine-player/Clementine/releases/download/1.4.1-36-geea564c94/ClementineSetup-1.4.1-36-geea564c94.exe"
+        "x86": "https://github.com/clementine-player/Clementine/releases/download/1.4.1-61-gbb2f63780/ClementineSetup-1.4.1-61-gbb2f63780.exe"
       },
-      "version": "1.4.1-36-geea564c94",
-      "icon": "https://static.filehorse.com/icons/mp3-and-audio/clementine-music-player-icon-32.png",
-      "rating": "3.8",
-      "category": "multimedia",
       "licence": "Open Source",
+      "rating": "3.8",
+      "tag": [],
       "title": "Clementine Player",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "1.4.1-61-gbb2f63780"
     },
     "cmake": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "msi",
-        "x86": "https://github.com/Kitware/CMake/releases/download/v4.0.0-rc3/cmake-4.0.0-rc3-windows-i386.msi",
-        "x86_64": "https://github.com/Kitware/CMake/releases/download/v4.0.0-rc3/cmake-4.0.0-rc3-windows-x86_64.msi"
+        "x86": "https://github.com/Kitware/CMake/releases/download/v4.3.0-rc1/cmake-4.3.0-rc1-windows-i386.msi",
+        "x86_64": "https://github.com/Kitware/CMake/releases/download/v4.3.0-rc1/cmake-4.3.0-rc1-windows-x86_64.msi"
       },
-      "version": "3.31.6",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "CMake",
-      "tag": []
+      "uninstallCMD": [
+        "msiexec.exe",
+        "/qn",
+        "/x",
+        "{{.installer}}"
+      ],
+      "version": "4.2.3"
     },
     "codeblocks": {
+      "category": "developer",
+      "icon": "https://wiki.codeblocks.org/resources/assets/wiki.png",
       "installer": {
         "kind": "nsis",
         "options": {
           "extension": ".exe"
         },
-        "x86": "https://sourceforge.net/projects/codeblocks/files/Binaries/20.03/Windows/32bit/codeblocks-20.03-32bit-setup.exe/download",
-        "x86_64": "https://sourceforge.net/projects/codeblocks/files/Binaries/20.03/Windows/codeblocks-20.03-setup.exe/download"
+        "x86": "https://sourceforge.net/projects/codeblocks/files/Binaries/25.03/Windows/32bit/codeblocks-25.03-32bit-setup.exe/download",
+        "x86_64": "https://sourceforge.net/projects/codeblocks/files/Binaries/25.03/Windows/codeblocks-25.03-setup.exe/download"
       },
-      "version": "20.03",
-      "icon": "https://wiki.codeblocks.org/resources/assets/wiki.png",
-      "rating": "3.4",
-      "category": "developer",
       "licence": "Open Source",
+      "rating": "3.4",
+      "tag": [],
       "title": "Code::Blocks",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "25.03"
     },
     "codeblocks-mingw": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "nsis",
         "options": {
           "extension": ".exe"
         },
-        "x86": "https://sourceforge.net/projects/codeblocks/files/Binaries/20.03/Windows/32bit/codeblocks-20.03-32bit-mingw-32bit-setup.exe/download",
-        "x86_64": "https://sourceforge.net/projects/codeblocks/files/Binaries/20.03/Windows/codeblocks-20.03mingw-setup.exe/download"
+        "x86": "https://sourceforge.net/projects/codeblocks/files/Binaries/25.03/Windows/32bit/codeblocks-25.03-32bit-mingw-32bit-setup.exe/download",
+        "x86_64": "https://sourceforge.net/projects/codeblocks/files/Binaries/25.03/Windows/codeblocks-25.03mingw-setup.exe/download"
       },
-      "version": "20.03",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Code::Blocks with MinGW",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "25.03"
     },
     "colemak": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "as-is",
         "options": {
@@ -646,41 +858,55 @@
         },
         "x86": "https://colemak.com/pub/windows/Colemak-1.1-Caps-Lock-Unchanged.zip"
       },
-      "version": "1.1",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Colemak",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "1.1"
     },
     "cpu-z": {
+      "category": "desktop",
+      "icon": "https://www.cpuid.com/medias/images/softwares/cpu-z.svg",
       "installer": {
         "kind": "innosetup",
-        "x86": "https://download.cpuid.com/cpu-z/cpu-z_2.14-en.exe"
+        "x86": "https://download.cpuid.com/cpu-z/cpu-z_2.18-en.exe"
       },
-      "version": "2.14",
-      "icon": "https://www.cpuid.com/medias/images/softwares/cpu-z.svg",
-      "rating": "4.8",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4.8",
+      "tag": [],
       "title": "CPU-Z",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "2.18"
     },
     "cyberduck": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "msi",
-        "x86": "https://update.cyberduck.io/windows/Cyberduck-Installer-9.1.3.42945.msi"
+        "x86": "https://update.cyberduck.io/windows/Cyberduck-Installer-9.4.0.44341.msi"
       },
-      "version": "9.1.3.42945",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Cyberduck",
-      "tag": []
+      "uninstallCMD": [
+        "msiexec.exe",
+        "/qn",
+        "/x",
+        "{{.installer}}"
+      ],
+      "version": "9.4.0.44341"
     },
     "cygwin": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "custom",
         "options": {
@@ -704,31 +930,52 @@
         "x86": "https://cygwin.com/setup-x86.exe",
         "x86_64": "https://cygwin.com/setup-x86_64.exe"
       },
-      "version": "latest",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Cygwin",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "-q",
+        "-s",
+        "http://ftp.gwdg.de/pub/cygwin",
+        "-C",
+        "Base",
+        "-P",
+        "binutils",
+        "-P",
+        "curl",
+        "-P",
+        "make",
+        "-P",
+        "wget",
+        "/S"
+      ],
+      "version": "latest"
     },
     "deluge": {
+      "category": "desktop",
+      "icon": "https://static.filehorse.com/icons/file-transfer-and-networking/deluge-icon-32.png",
       "installer": {
         "kind": "nsis",
-        "x86": "https://ftp.osuosl.org/pub/deluge/windows/deluge-2.1.1-win32-setup.exe",
-        "x86_64": "https://ftp.osuosl.org/pub/deluge/windows/deluge-2.1.1-win64-setup.exe"
+        "x86": "https://ftp.osuosl.org/pub/deluge/windows/deluge-2.2.0-win32-setup.exe",
+        "x86_64": "https://ftp.osuosl.org/pub/deluge/windows/deluge-2.2.0-win64-setup.exe"
       },
-      "version": "2.1.1",
-      "icon": "https://static.filehorse.com/icons/file-transfer-and-networking/deluge-icon-32.png",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Open Source",
-      "title": "Deluge",
+      "rating": "4",
       "tag": [
         "featured"
-      ]
+      ],
+      "title": "Deluge",
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "2.2.0"
     },
     "dependency-walker": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "zip",
         "options": {
@@ -737,15 +984,19 @@
         "x86": "https://www.dependencywalker.com/depends22_x86.zip",
         "x86_64": "https://www.dependencywalker.com/depends22_x64.zip"
       },
-      "version": "2.2",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Dependency Walker",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "2.2"
     },
     "directx-june2010": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "custom",
         "options": {
@@ -755,10 +1006,10 @@
             "{{.installer}}",
             "/Q",
             "/T:c:\\directx_June2010_redist",
-            "&",
+            "\u0026",
             "c:\\directx_June2010_redist\\DXSETUP.exe",
             "/silent",
-            "&",
+            "\u0026",
             "rmdir",
             "/S",
             "/Q",
@@ -767,15 +1018,30 @@
         },
         "x86": "https://download.microsoft.com/download/8/4/A/84A35BF1-DAFE-4AE8-82AF-AD2AE20B6B14/directx_Jun2010_redist.exe"
       },
-      "version": "latest",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "DirectX June 2010",
-      "tag": []
+      "uninstallCMD": [
+        "cmd",
+        "/K",
+        "{{.installer}}",
+        "/Q",
+        "/T:c:\\directx_June2010_redist",
+        "\u0026",
+        "c:\\directx_June2010_redist\\DXSETUP.exe",
+        "/silent",
+        "\u0026",
+        "rmdir",
+        "/S",
+        "/Q",
+        "c:\\directx_June2010_redist"
+      ],
+      "version": "latest"
     },
     "discord": {
+      "category": "desktop",
+      "icon": "https://static.filehorse.com/icons/messaging-and-chat/discord-icon-32.png",
       "installer": {
         "kind": "squirrel",
         "options": {
@@ -783,17 +1049,21 @@
         },
         "x86": "https://discordapp.com/api/download?platform=win"
       },
-      "version": "latest",
-      "icon": "https://static.filehorse.com/icons/messaging-and-chat/discord-icon-32.png",
-      "rating": "4.1",
-      "category": "desktop",
       "licence": "Freeware",
-      "title": "Discord",
+      "rating": "4.1",
       "tag": [
         "featured"
-      ]
+      ],
+      "title": "Discord",
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "latest"
     },
     "displaycal": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "innosetup",
         "options": {
@@ -801,15 +1071,19 @@
         },
         "x86": "https://sourceforge.net/projects/dispcalgui/files/release/3.8.9.3/DisplayCAL-3.8.9.3-Setup.exe/download"
       },
-      "version": "3.8.9.3",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "DisplayCAL",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "3.8.9.3"
     },
     "ditto": {
+      "category": "desktop",
+      "icon": "https://static.filehorse.com/icons/desktop-enhancements/ditto-icon-32.png",
       "installer": {
         "kind": "innosetup",
         "options": {
@@ -818,15 +1092,19 @@
         "x86": "https://sourceforge.net/projects/ditto-cp/files/Ditto/3.24.246.0/DittoSetup_3_24_246_0.exe/download",
         "x86_64": "https://sourceforge.net/projects/ditto-cp/files/Ditto/3.24.246.0/DittoSetup_64bit_3_24_246_0.exe/download"
       },
-      "version": "3.24.246.0",
-      "icon": "https://static.filehorse.com/icons/desktop-enhancements/ditto-icon-32.png",
-      "rating": "4.5",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4.5",
+      "tag": [],
       "title": "Ditto",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "3.24.246.0"
     },
     "dotnet": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "custom",
         "options": {
@@ -839,32 +1117,41 @@
         },
         "x86": "https://download.microsoft.com/download/0/5/C/05C1EC0E-D5EE-463B-BFE3-9311376A6809/NDP472-KB4054531-Web.exe"
       },
-      "version": "4.7.2",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": ".NET",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/q",
+        "/norestart"
+      ],
+      "version": "4.7.2"
     },
     "doublecmd": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "innosetup",
         "options": {
           "extension": ".exe"
         },
-        "x86": "https://sourceforge.net/projects/doublecmd/files/DC%20for%20Windows%2032%20bit/Double%20Commander%201.1.22/doublecmd-1.1.22.i386-win32.exe/download",
-        "x86_64": "https://sourceforge.net/projects/doublecmd/files/DC%20for%20Windows%2064%20bit/Double%20Commander%201.1.22/doublecmd-1.1.22.x86_64-win64.exe/download"
+        "x86": "https://sourceforge.net/projects/doublecmd/files/DC%20for%20Windows%2032%20bit/Double%20Commander%201.1.32/doublecmd-1.1.32.i386-win32.exe/download",
+        "x86_64": "https://sourceforge.net/projects/doublecmd/files/DC%20for%20Windows%2064%20bit/Double%20Commander%201.1.32/doublecmd-1.1.32.x86_64-win64.exe/download"
       },
-      "version": "1.1.22",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Double Commander",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "1.1.32"
     },
     "dropbox": {
+      "category": "desktop",
+      "icon": "https://static.filehorse.com/icons/compression-and-backup/dropbox-icon-32.png",
       "installer": {
         "kind": "custom",
         "options": {
@@ -874,30 +1161,40 @@
           ],
           "extension": ".exe"
         },
-        "x86": "https://www.dropbox.com/download?type=full&plat=win"
+        "x86": "https://www.dropbox.com/download?type=full\u0026plat=win"
       },
-      "version": "latest",
-      "icon": "https://static.filehorse.com/icons/compression-and-backup/dropbox-icon-32.png",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Dropbox",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "latest"
     },
     "duck": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "msi",
-        "x86": "https://dist.duck.sh/duck-9.1.3.42945.msi"
+        "x86": "https://dist.duck.sh/duck-9.4.0.44341.msi"
       },
-      "version": "9.1.3.42945",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Duck",
-      "tag": []
+      "uninstallCMD": [
+        "msiexec.exe",
+        "/qn",
+        "/x",
+        "{{.installer}}"
+      ],
+      "version": "9.4.0.44341"
     },
     "dynalist": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "nsis",
         "options": {
@@ -905,28 +1202,36 @@
         },
         "x86": "https://dynalist.io/standalone/download?file=Dynalist%20Setup.exe"
       },
-      "version": "latest",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Dynalist",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "latest"
     },
     "eac": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "nsis",
         "x86": "http://www.exactaudiocopy.de/eac-1.8.exe"
       },
-      "version": "1.8",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Exact Audio Copy",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "1.8"
     },
     "eclipse-committers": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "zip",
         "options": {
@@ -934,15 +1239,19 @@
         },
         "x86_64": "http://ftp.osuosl.org/pub/eclipse/technology/epp/downloads/release/2024-12/R/eclipse-committers-2024-12-R-win32-x86_64.zip"
       },
-      "version": "2024-12-R",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Eclipse Committers",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "2024-12-R"
     },
     "eclipse-cpp": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "zip",
         "options": {
@@ -950,15 +1259,19 @@
         },
         "x86_64": "http://ftp.osuosl.org/pub/eclipse/technology/epp/downloads/release/2024-12/R/eclipse-cpp-2024-12-R-win32-x86_64.zip"
       },
-      "version": "2024-12-R",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Eclipse C++ IDE",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "2024-12-R"
     },
     "eclipse-java": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "zip",
         "options": {
@@ -966,15 +1279,19 @@
         },
         "x86_64": "http://ftp.osuosl.org/pub/eclipse/technology/epp/downloads/release/2024-12/R/eclipse-java-2024-12-R-win32-x86_64.zip"
       },
-      "version": "2024-12-R",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Eclipse Java IDE",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "2024-12-R"
     },
     "eclipse-jee": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "zip",
         "options": {
@@ -982,15 +1299,19 @@
         },
         "x86_64": "http://ftp.osuosl.org/pub/eclipse/technology/epp/downloads/release/2024-12/R/eclipse-jee-2024-12-R-win32-x86_64.zip"
       },
-      "version": "2024-12-R",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Eclipse JEE IDE",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "2024-12-R"
     },
     "eclipse-php": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "zip",
         "options": {
@@ -998,28 +1319,38 @@
         },
         "x86_64": "http://ftp.osuosl.org/pub/eclipse/technology/epp/downloads/release/2024-12/R/eclipse-php-2024-12-R-win32-x86_64.zip"
       },
-      "version": "2024-12-R",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Eclipse PHP IDE",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "2024-12-R"
     },
     "em-client": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "msi",
         "x86": "http://www.emclient.com/dist/latest/setup.msi"
       },
-      "version": "latest",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "eM Client",
-      "tag": []
+      "uninstallCMD": [
+        "msiexec.exe",
+        "/qn",
+        "/x",
+        "{{.installer}}"
+      ],
+      "version": "latest"
     },
     "emacs": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "zip",
         "options": {
@@ -1031,98 +1362,128 @@
             "{{.PROGRAMFILES}}\\Emacs\\bin\\runemacs.exe"
           ]
         },
-        "x86": "https://ftp.gnu.org/gnu/emacs/windows/emacs-30/emacs-30.1.-i686.zip",
-        "x86_64": "https://ftp.gnu.org/gnu/emacs/windows/emacs-30/emacs-30.1.-x86_64.zip"
+        "x86": "https://ftp.gnu.org/gnu/emacs/windows/emacs-30/emacs-30.2.-i686.zip",
+        "x86_64": "https://ftp.gnu.org/gnu/emacs/windows/emacs-30/emacs-30.2.-x86_64.zip"
       },
-      "version": "30.1.",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Emacs",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "30.2."
     },
     "empoche": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "nsis",
         "x86": "https://empoche-desktop.s3.eu-central-1.amazonaws.com/Empoche+Setup+0.4.5.exe"
       },
-      "version": "0.4.5",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Empoche",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "0.4.5"
     },
     "enpass": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "nsis",
         "x86": "https://dl.enpass.io/stable/windows/setup/6.9.3.1593/Enpass-setup.exe"
       },
-      "version": "6.9.3.1593",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Enpass",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "6.9.3.1593"
     },
     "epic-games-launcher": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "msi",
         "x86": "https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/download/EpicGamesLauncherInstaller.msi"
       },
-      "version": "latest",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Epic Games Launcher",
-      "tag": []
+      "uninstallCMD": [
+        "msiexec.exe",
+        "/qn",
+        "/x",
+        "{{.installer}}"
+      ],
+      "version": "latest"
     },
     "erlang": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "nsis",
-        "x86": "https://github.com/erlang/otp/releases/download/OTP-27.2/otp_win32_27.2.exe",
-        "x86_64": "https://github.com/erlang/otp/releases/download/OTP-27.2/otp_win64_27.2.exe"
+        "x86": "https://github.com/erlang/otp/releases/download/OTP-28.3.3/otp_win32_28.3.3.exe",
+        "x86_64": "https://github.com/erlang/otp/releases/download/OTP-28.3.3/otp_win64_28.3.3.exe"
       },
-      "version": "27",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Erlang",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "28"
     },
     "etcher": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "nsis",
         "x86_64": "https://github.com/balena-io/etcher/releases/download/v1.18.13/balenaEtcher-Setup-1.18.13.exe"
       },
-      "version": "2.1.0",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Etcher",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "2.1.4"
     },
     "everything-search": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "nsis",
-        "x86": "https://www.voidtools.com/Everything-1.4.1.1026.x86-Setup.exe",
-        "x86_64": "https://www.voidtools.com/Everything-1.4.1.1026.x64-Setup.exe"
+        "x86": "https://www.voidtools.com/Everything-1.4.1.1032.x86-Setup.exe",
+        "x86_64": "https://www.voidtools.com/Everything-1.4.1.1032.x64-Setup.exe"
       },
-      "version": "1.4.1.1026",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Everything Search",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "1.4.1.1032"
     },
     "exeproxy": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "zip",
         "options": {
@@ -1130,149 +1491,187 @@
         },
         "x86": "https://github.com/tim-lebedkov/exe-proxy/releases/download/version_0.5/exeproxy-0.5.zip"
       },
-      "version": "0.5",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "ExeProxy",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "0.5"
     },
     "firefox": {
+      "category": "browsers",
+      "icon": "https://static.filehorse.com/icons/browsers-and-plugins/firefox-icon-32.png",
       "installer": {
         "kind": "nsis",
         "options": {
           "extension": ".exe"
         },
-        "x86": "https://download.mozilla.org/?product=firefox-latest&os=win&lang=en-US",
-        "x86_64": "https://download.mozilla.org/?product=firefox-latest&os=win64&lang=en-US"
+        "x86": "https://download.mozilla.org/?product=firefox-latest\u0026os=win\u0026lang=en-US",
+        "x86_64": "https://download.mozilla.org/?product=firefox-latest\u0026os=win64\u0026lang=en-US"
       },
-      "version": "latest",
-      "icon": "https://static.filehorse.com/icons/browsers-and-plugins/firefox-icon-32.png",
-      "rating": "5.0",
-      "category": "browsers",
       "licence": "Open Source",
-      "title": "Firefox",
+      "rating": "5.0",
       "tag": [
         "featured",
         "win10"
-      ]
+      ],
+      "title": "Firefox",
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "latest"
     },
     "firefox-beta": {
+      "category": "browsers",
+      "icon": "https://static.filehorse.com/icons/browsers-and-plugins/firefox-icon-32.png",
       "installer": {
         "kind": "nsis",
         "options": {
           "extension": ".exe"
         },
-        "x86": "https://download.mozilla.org/?product=firefox-beta-latest&os=win&lang=en-US",
-        "x86_64": "https://download.mozilla.org/?product=firefox-beta-latest&os=win64&lang=en-US"
+        "x86": "https://download.mozilla.org/?product=firefox-beta-latest\u0026os=win\u0026lang=en-US",
+        "x86_64": "https://download.mozilla.org/?product=firefox-beta-latest\u0026os=win64\u0026lang=en-US"
       },
-      "version": "latest",
-      "icon": "https://static.filehorse.com/icons/browsers-and-plugins/firefox-icon-32.png",
-      "rating": "5.0",
-      "category": "browsers",
       "licence": "Open Source",
+      "rating": "5.0",
+      "tag": [],
       "title": "Firefox Beta",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "latest"
     },
     "firefox-developer-edition": {
+      "category": "browsers",
+      "icon": "https://static.filehorse.com/icons/browsers-and-plugins/firefox-icon-32.png",
       "installer": {
         "kind": "nsis",
         "options": {
           "extension": ".exe"
         },
-        "x86": "https://download.mozilla.org/?product=firefox-devedition-latest-ssl&os=win&lang=en-US",
-        "x86_64": "https://download.mozilla.org/?product=firefox-devedition-latest-ssl&os=win64&lang=en-US"
+        "x86": "https://download.mozilla.org/?product=firefox-devedition-latest-ssl\u0026os=win\u0026lang=en-US",
+        "x86_64": "https://download.mozilla.org/?product=firefox-devedition-latest-ssl\u0026os=win64\u0026lang=en-US"
       },
-      "version": "latest",
-      "icon": "https://static.filehorse.com/icons/browsers-and-plugins/firefox-icon-32.png",
-      "rating": "5.0",
-      "category": "browsers",
       "licence": "Open Source",
+      "rating": "5.0",
+      "tag": [],
       "title": "Firefox Developer Edition",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "latest"
     },
     "firefox-esr": {
+      "category": "browsers",
+      "icon": "https://static.filehorse.com/icons/browsers-and-plugins/firefox-icon-32.png",
       "installer": {
         "kind": "nsis",
         "options": {
           "extension": ".exe"
         },
-        "x86": "https://download.mozilla.org/?product=firefox-esr-latest&os=win&lang=en-US",
-        "x86_64": "https://download.mozilla.org/?product=firefox-esr-latest&os=win64&lang=en-US"
+        "x86": "https://download.mozilla.org/?product=firefox-esr-latest\u0026os=win\u0026lang=en-US",
+        "x86_64": "https://download.mozilla.org/?product=firefox-esr-latest\u0026os=win64\u0026lang=en-US"
       },
-      "version": "latest",
-      "icon": "https://static.filehorse.com/icons/browsers-and-plugins/firefox-icon-32.png",
-      "rating": "5.0",
-      "category": "browsers",
       "licence": "Open Source",
-      "title": "Firefox ESR",
+      "rating": "5.0",
       "tag": [
         "featured",
         "win7"
-      ]
+      ],
+      "title": "Firefox ESR",
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "latest"
     },
     "flux": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "nsis",
         "x86": "https://justgetflux.com/flux-setup.exe"
       },
-      "version": "latest",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "f.lux",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "latest"
     },
     "foxitreader": {
+      "category": "desktop",
+      "icon": "https://static.filehorse.com/icons/office-and-business-tools/foxit-reader-icon-32.png",
       "installer": {
         "kind": "msi",
         "options": {
           "extension": ".exe"
         },
-        "x86": "https://www.foxitsoftware.com/downloads/latest.php?product=Foxit-Enterprise-Reader&platform=Windows&package_type=msi"
+        "x86": "https://www.foxitsoftware.com/downloads/latest.php?product=Foxit-Enterprise-Reader\u0026platform=Windows\u0026package_type=msi"
       },
-      "version": "latest",
-      "icon": "https://static.filehorse.com/icons/office-and-business-tools/foxit-reader-icon-32.png",
-      "rating": "5",
-      "category": "desktop",
       "licence": "Freeware",
-      "title": "Foxit Reader",
+      "rating": "5",
       "tag": [
         "featured"
-      ]
+      ],
+      "title": "Foxit Reader",
+      "uninstallCMD": [
+        "msiexec.exe",
+        "/qn",
+        "/x",
+        "{{.installer}}"
+      ],
+      "version": "latest"
     },
     "freeplane": {
+      "category": "desktop",
+      "icon": "https://static.filehorse.com/icons/office-and-business-tools/freeplane-icon-32.png",
       "installer": {
         "kind": "innosetup",
         "options": {
           "extension": ".exe"
         },
-        "x86": "https://sourceforge.net/projects/freeplane/files/freeplane%20stable/Freeplane-Setup-1.12.9.exe/download"
+        "x86": "https://sourceforge.net/projects/freeplane/files/freeplane%20stable/Freeplane-Setup-1.13.2.exe/download"
       },
-      "version": "1.12.9",
-      "icon": "https://static.filehorse.com/icons/office-and-business-tools/freeplane-icon-32.png",
-      "rating": "4.0",
-      "category": "desktop",
       "licence": "Open Source",
+      "rating": "4.0",
+      "tag": [],
       "title": "Freeplane",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "1.13.2"
     },
     "gimp": {
+      "category": "desktop",
+      "icon": "https://static.filehorse.com/icons/imaging-and-digital-photo/gimp-icon-32.png",
       "installer": {
         "kind": "innosetup",
-        "x86": "https://download.gimp.org/gimp/v2.10/windows/gimp-2.10.38-setup.exe"
+        "x86": "https://download.gimp.org/gimp/v3.0/windows/gimp-3.0.8-setup-2.exe"
       },
-      "version": "2.10.38",
-      "icon": "https://static.filehorse.com/icons/imaging-and-digital-photo/gimp-icon-32.png",
-      "rating": "4.8",
-      "category": "desktop",
       "licence": "Open Source",
+      "rating": "4.8",
+      "tag": [],
       "title": "GIMP",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "3.0.8"
     },
     "git": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "innosetup",
         "options": {
@@ -1280,18 +1679,22 @@
             "{{.PROGRAMFILES}}\\Git\\bin\\git.exe"
           ]
         },
-        "x86": "https://github.com/git-for-windows/git/releases/download/v2.48.1.windows.1/Git-2.48.1-32-bit.exe",
-        "x86_64": "https://github.com/git-for-windows/git/releases/download/v2.49.0-rc1.windows.1/Git-2.49.0-rc1-64-bit.exe"
+        "x86": "https://github.com/git-for-windows/git/releases/download/v2.50.1.windows.1/Git-2.50.1-32-bit.exe",
+        "x86_64": "https://github.com/git-for-windows/git/releases/download/v2.53.0.windows.1/Git-2.53.0-64-bit.exe"
       },
-      "version": "2.48.1",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Git",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "2.53.0"
     },
     "github": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "squirrel",
         "options": {
@@ -1299,43 +1702,57 @@
         },
         "x86": "https://central.github.com/deployments/desktop/desktop/latest/win32"
       },
-      "version": "latest",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "GitHub",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "latest"
     },
     "gitkraken": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "squirrel",
         "x86": "https://release.gitkraken.com/win32/GitKrakenSetup.exe",
         "x86_64": "https://release.gitkraken.com/win64/GitKrakenSetup.exe"
       },
-      "version": "latest",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "GitKraken",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "latest"
     },
     "go": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "msi",
-        "x86": "https://dl.google.com/go/go1.24.1.windows-386.msi",
-        "x86_64": "https://dl.google.com/go/go1.24.1.windows-amd64.msi"
+        "x86": "https://dl.google.com/go/go1.26.0.windows-386.msi",
+        "x86_64": "https://dl.google.com/go/go1.26.0.windows-amd64.msi"
       },
-      "version": "1.24.1",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Go",
-      "tag": []
+      "uninstallCMD": [
+        "msiexec.exe",
+        "/qn",
+        "/x",
+        "{{.installer}}"
+      ],
+      "version": "1.26.0"
     },
     "gog-galaxy": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "innosetup",
         "options": {
@@ -1343,152 +1760,206 @@
         },
         "x86": "https://content-system.gog.com/open_link/download?path=/open/galaxy/client/setup_galaxy_2.0.14.257.exe"
       },
-      "version": "2.0.14.257",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "GOG Galaxy",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "2.0.14.257"
     },
     "google-chrome": {
+      "category": "browsers",
+      "icon": "https://static.filehorse.com/icons/browsers-and-plugins/google-chrome-icon-32.png",
       "installer": {
         "kind": "msi",
         "x86": "https://dl.google.com/tag/s/dl/chrome/install/googlechromestandaloneenterprise.msi",
         "x86_64": "https://dl.google.com/tag/s/dl/chrome/install/googlechromestandaloneenterprise64.msi"
       },
-      "version": "latest",
-      "icon": "https://static.filehorse.com/icons/browsers-and-plugins/google-chrome-icon-32.png",
-      "rating": "4.8",
-      "category": "browsers",
       "licence": "Freeware",
-      "title": "Google Chrome",
+      "rating": "4.8",
       "tag": [
         "featured"
-      ]
+      ],
+      "title": "Google Chrome",
+      "uninstallCMD": [
+        "msiexec.exe",
+        "/qn",
+        "/x",
+        "{{.installer}}"
+      ],
+      "version": "latest"
     },
     "google-chrome-beta": {
+      "category": "browsers",
+      "icon": "https://static.filehorse.com/icons/browsers-and-plugins/google-chrome-icon-32.png",
       "installer": {
         "kind": "msi",
         "x86": "https://dl.google.com/tag/s/dl/chrome/install/beta/googlechromebetastandaloneenterprise.msi",
         "x86_64": "https://dl.google.com/tag/s/dl/chrome/install/beta/googlechromebetastandaloneenterprise64.msi"
       },
-      "version": "latest",
-      "icon": "https://static.filehorse.com/icons/browsers-and-plugins/google-chrome-icon-32.png",
-      "rating": "4.8",
-      "category": "browsers",
       "licence": "Freeware",
+      "rating": "4.8",
+      "tag": [],
       "title": "Google Chrome Beta",
-      "tag": []
+      "uninstallCMD": [
+        "msiexec.exe",
+        "/qn",
+        "/x",
+        "{{.installer}}"
+      ],
+      "version": "latest"
     },
     "google-chrome-dev": {
+      "category": "browsers",
+      "icon": "https://static.filehorse.com/icons/browsers-and-plugins/google-chrome-icon-32.png",
       "installer": {
         "kind": "msi",
         "x86": "https://dl.google.com/tag/s/dl/chrome/install/dev/googlechromedevstandaloneenterprise.msi",
         "x86_64": "https://dl.google.com/tag/s/dl/chrome/install/dev/googlechromedevstandaloneenterprise64.msi"
       },
-      "version": "latest",
-      "icon": "https://static.filehorse.com/icons/browsers-and-plugins/google-chrome-icon-32.png",
-      "rating": "4.8",
-      "category": "browsers",
       "licence": "Freeware",
+      "rating": "4.8",
+      "tag": [],
       "title": "Google Chrome Dev",
-      "tag": []
+      "uninstallCMD": [
+        "msiexec.exe",
+        "/qn",
+        "/x",
+        "{{.installer}}"
+      ],
+      "version": "latest"
     },
     "google-drive": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "msi",
         "x86": "https://dl.google.com/drive/gsync_enterprise.msi"
       },
-      "version": "latest",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Google Drive",
-      "tag": []
+      "uninstallCMD": [
+        "msiexec.exe",
+        "/qn",
+        "/x",
+        "{{.installer}}"
+      ],
+      "version": "latest"
     },
     "gpg4win": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "nsis",
         "x86": "https://files.gpg4win.org/gpg4win-latest.exe"
       },
-      "version": "latest",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Gpg4win",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "latest"
     },
     "gvim": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "nsis",
         "x86": "http://ftp.vim.org/pub/vim/pc/gvim90.exe"
       },
-      "version": "9.1",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "GVim",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "9.1"
     },
     "handbrake": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "nsis",
-        "x86_64": "https://github.com/HandBrake/HandBrake/releases/download/1.9.2/HandBrake-1.9.2-x86_64-Win_GUI.exe"
+        "x86_64": "https://github.com/HandBrake/HandBrake/releases/download/1.10.2/HandBrake-1.10.2-x86_64-Win_GUI.exe"
       },
-      "version": "1.9.2",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "HandBrake",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "1.10.2"
     },
     "heidisql": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "innosetup",
-        "x86": "https://www.heidisql.com/installers/HeidiSQL_12.10.0.7000_Setup.exe"
+        "x86": "https://github.com/HeidiSQL/HeidiSQL/releases/download/v12.15.1.1/HeidiSQL_12.15.0.7171_Setup.exe"
       },
-      "version": "12.10.0.7000",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "HeidiSQL",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "12.15.0.7171"
     },
     "hexchat": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "innosetup",
         "x86": "https://dl.hexchat.net/hexchat/HexChat%202.16.1%20x86.exe",
         "x86_64": "https://dl.hexchat.net/hexchat/HexChat%202.16.1%20x64.exe"
       },
-      "version": "2.16.1",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "HexChat",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "2.16.1"
     },
     "inkscape": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "msi",
         "x86": "https://inkscape.org/gallery/item/44620/inkscape-1.3.2_2023-11-25_091e20ef0f-x86.msi",
         "x86_64": "https://inkscape.org/gallery/item/44619/inkscape-1.3.2_2023-11-25_091e20e-x64.msi"
       },
-      "version": "1.3.2",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Inkscape",
-      "tag": []
+      "uninstallCMD": [
+        "msiexec.exe",
+        "/qn",
+        "/x",
+        "{{.installer}}"
+      ],
+      "version": "1.3.2"
     },
     "innosetup": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "innosetup",
         "options": {
@@ -1496,28 +1967,36 @@
         },
         "x86": "https://www.jrsoftware.org/download.php/is.exe"
       },
-      "version": "latest",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Inno Setup",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "latest"
     },
     "intellij-idea-community": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "nsis",
-        "x86": "https://download.jetbrains.com/idea/ideaIC-2024.3.4.1.exe"
+        "x86": "https://download.jetbrains.com/idea/ideaIC-2025.2.6.1.exe"
       },
-      "version": "2024.3.4.1",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "IntelliJ IDEA Community",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "2025.2.6.1"
     },
     "irfanview": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "custom",
         "options": {
@@ -1526,18 +2005,22 @@
             "/silent"
           ]
         },
-        "x86": "http://download.betanews.com/download/967963863-1/iview470_setup.exe",
-        "x86_64": "http://download.betanews.com/download/967963863-1/iview470_x64_setup.exe"
+        "x86": "http://download.betanews.com/download/967963863-1/iview473_setup.exe",
+        "x86_64": "http://download.betanews.com/download/967963863-1/iview473_x64_setup.exe"
       },
-      "version": "4.70",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "IrfanView",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/silent"
+      ],
+      "version": "4.73"
     },
     "itch": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "squirrel",
         "options": {
@@ -1545,31 +2028,39 @@
         },
         "x86": "https://itch.io/app/download?platform=windows"
       },
-      "version": "latest",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Itch",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "latest"
     },
     "jetbrains-toolbox": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "nsis",
         "options": {
           "extension": ".exe"
         },
-        "x86": "https://data.services.jetbrains.com/products/download?code=TBA&platform=windows"
+        "x86": "https://data.services.jetbrains.com/products/download?code=TBA\u0026platform=windows"
       },
-      "version": "latest",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "JetBrains Toolbox",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "latest"
     },
     "jom": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "zip",
         "options": {
@@ -1580,31 +2071,41 @@
         },
         "x86": "https://download.qt.io/official_releases/jom/jom.zip"
       },
-      "version": "latest",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Jom",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "latest"
     },
     "keepass": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "msi",
         "options": {
           "extension": ".msi"
         },
-        "x86": "https://sourceforge.net/projects/keepass/files/KeePass%202.x/2.58/KeePass-2.58.msi/download"
+        "x86": "https://sourceforge.net/projects/keepass/files/KeePass%202.x/2.60/KeePass-2.60.msi/download"
       },
-      "version": "2.58",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "KeePass",
-      "tag": []
+      "uninstallCMD": [
+        "msiexec.exe",
+        "/qn",
+        "/x",
+        "{{.installer}}"
+      ],
+      "version": "2.60"
     },
     "keepass-keepasshttp": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "zip",
         "options": {
@@ -1612,15 +2113,19 @@
         },
         "x86": "https://github.com/pfn/keepasshttp/archive/{{.version}}.zip"
       },
-      "version": "1.8.4.2",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "KeePass with KeePassHTTP",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "1.8.4.2"
     },
     "keybase": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "custom",
         "options": {
@@ -1632,82 +2137,109 @@
         },
         "x86": "https://prerelease.keybase.io/keybase_setup_386.exe"
       },
-      "version": "latest",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Keybase",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/install",
+        "/quiet"
+      ],
+      "version": "latest"
     },
     "kodi": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "nsis",
-        "x86": "https://mirrors.kodi.tv/releases/windows/win32/kodi-21.2-Omega-x86.exe"
+        "x86": "https://mirrors.kodi.tv/releases/windows/win32/kodi-21.3-Omega-x86.exe"
       },
-      "version": "21.2",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Kodi",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "21.3"
     },
     "krita": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "nsis",
         "x86": "https://download.kde.org/stable/krita/4.4.3/krita-x86-4.4.3-setup.exe",
         "x86_64": "https://download.kde.org/stable/krita/5.2.2/krita-x64-5.2.2-setup.exe"
       },
-      "version": "4.4.3",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Krita",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "4.4.3"
     },
     "libreoffice": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "msi",
-        "x86": "https://download.documentfoundation.org/libreoffice/stable/25.2.1/win/x86/LibreOffice_25.2.1_Win_x86.msi",
-        "x86_64": "https://download.documentfoundation.org/libreoffice/stable/25.2.1/win/x86_64/LibreOffice_25.2.1_Win_x86-64.msi"
+        "x86": "https://download.documentfoundation.org/libreoffice/stable/26.2.1/win/x86/LibreOffice_26.2.1_Win_x86.msi",
+        "x86_64": "https://download.documentfoundation.org/libreoffice/stable/26.2.1/win/x86_64/LibreOffice_26.2.1_Win_x86-64.msi"
       },
-      "version": "25.2.1",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "LibreOffice",
-      "tag": []
+      "uninstallCMD": [
+        "msiexec.exe",
+        "/qn",
+        "/x",
+        "{{.installer}}"
+      ],
+      "version": "26.2.1"
     },
     "lightshot": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "innosetup",
         "x86": "https://app.prntscr.com/build/setup-lightshot.exe"
       },
-      "version": "latest",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Lightshot",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "latest"
     },
     "lockhunter": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "innosetup",
         "x86": "https://lockhunter.com/assets/exe/lockhuntersetup_3-4-3.exe"
       },
-      "version": "3.4.3",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "LockHunter",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "3.4.3"
     },
     "mailspring": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "squirrel",
         "options": {
@@ -1715,15 +2247,19 @@
         },
         "x86": "https://updates.getmailspring.com/download?platform=win32"
       },
-      "version": "latest",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Mailspring",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "latest"
     },
     "mailstore-home": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "as-is",
         "options": {
@@ -1731,15 +2267,19 @@
         },
         "x86": "https://my.mailstore.com/Downloads/Home"
       },
-      "version": "latest",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "MailStore Home",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "latest"
     },
     "malwarebytes": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "innosetup",
         "options": {
@@ -1747,28 +2287,36 @@
         },
         "x86": "https://downloads.malwarebytes.com/file/mbam_current/"
       },
-      "version": "latest",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Malwarebytes",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "latest"
     },
     "marktext": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "nsis",
         "x86": "https://github.com/marktext/marktext/releases/download/v0.17.1/marktext-setup.exe"
       },
-      "version": "0.17.1",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Mark Text",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "0.17.1"
     },
     "mednafen": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "zip",
         "options": {
@@ -1780,28 +2328,36 @@
         "x86": "https://mednafen.github.io/releases/files/mednafen-{{.version}}-win32.zip",
         "x86_64": "https://mednafen.github.io/releases/files/mednafen-{{.version}}-win64.zip"
       },
-      "version": "latest",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Mednafen",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "latest"
     },
     "mega-sync": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "nsis",
         "x86_64": "https://mega.nz/MEGAsyncSetup64.exe"
       },
-      "version": "latest",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "MEGAsync",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "latest"
     },
     "mercurial": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "msi",
         "options": {
@@ -1812,15 +2368,21 @@
         "x86": "https://www.mercurial-scm.org/release/windows/mercurial-6.3.1-x86.msi",
         "x86_64": "https://www.mercurial-scm.org/release/windows/mercurial-6.3.1-x64.msi"
       },
-      "version": "6.3.1",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Mercurial",
-      "tag": []
+      "uninstallCMD": [
+        "msiexec.exe",
+        "/qn",
+        "/x",
+        "{{.installer}}"
+      ],
+      "version": "6.3.1"
     },
     "microsoft-security-essentials": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "custom",
         "options": {
@@ -1832,42 +2394,59 @@
         },
         "x86": "http://mse.dlservice.microsoft.com/download/A/3/8/A38FFBF2-1122-48B4-AF60-E44F6DC28BD8/enus/amd64/mseinstall.exe"
       },
-      "version": "latest",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Microsoft Security Essentials",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/s",
+        "/runwgacheck"
+      ],
+      "version": "latest"
     },
     "microsoft-teams": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "msi",
-        "x86": "https://teams.microsoft.com/downloads/desktopurl?env=production&plat=windows&arch=x86&managedInstaller=true&download=true",
-        "x86_64": "https://teams.microsoft.com/downloads/desktopurl?env=production&plat=windows&arch=x64&managedInstaller=true&download=true"
+        "x86": "https://teams.microsoft.com/downloads/desktopurl?env=production\u0026plat=windows\u0026arch=x86\u0026managedInstaller=true\u0026download=true",
+        "x86_64": "https://teams.microsoft.com/downloads/desktopurl?env=production\u0026plat=windows\u0026arch=x64\u0026managedInstaller=true\u0026download=true"
       },
-      "version": "latest",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Microsoft Teams",
-      "tag": []
+      "uninstallCMD": [
+        "msiexec.exe",
+        "/qn",
+        "/x",
+        "{{.installer}}"
+      ],
+      "version": "latest"
     },
     "mono": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "msi",
         "x86": "https://download.mono-project.com/archive/6.12.0/windows-installer/mono-6.12.0.206-x64-0.msi"
       },
-      "version": "6.12.0.206",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Mono",
-      "tag": []
+      "uninstallCMD": [
+        "msiexec.exe",
+        "/qn",
+        "/x",
+        "{{.installer}}"
+      ],
+      "version": "6.12.0.206"
     },
     "moonlight-qt": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "custom",
         "options": {
@@ -1879,80 +2458,111 @@
         "x86": "https://github.com/moonlight-stream/moonlight-qt/releases/download/v6.1.0/MoonlightSetup-6.1.0.exe",
         "x86_64": "https://github.com/moonlight-stream/moonlight-qt/releases/download/v6.1.0/MoonlightSetup-6.1.0.exe"
       },
-      "version": "6.1.0",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Moonlight QT",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/passive",
+        "/S"
+      ],
+      "version": "6.1.0"
     },
     "mountainduck": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "msi",
-        "x86": "https://dist.mountainduck.io/Mountain%20Duck%20Installer-4.17.3.22638.msi"
+        "x86": "https://dist.mountainduck.io/Mountain%20Duck%20Installer-4.17.6.22724.msi"
       },
-      "version": "4.17.3.22638",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Mountain Duck",
-      "tag": []
+      "uninstallCMD": [
+        "msiexec.exe",
+        "/qn",
+        "/x",
+        "{{.installer}}"
+      ],
+      "version": "4.17.6.22724"
     },
     "mp3tag": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "nsis",
-        "x86": "https://download.mp3tag.de/mp3tagv328setup.exe"
+        "x86": "https://download.mp3tag.de/mp3tag-v3.33.1-setup.exe"
       },
-      "version": "3.28",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Mp3tag",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "3.33.1"
     },
     "mremoteng": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "msi",
         "x86": "https://github.com/mRemoteNG/mRemoteNG/releases/download/v1.76.20/mRemoteNG-Installer-1.76.20.24615.msi"
       },
-      "version": "1.76.20",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "mRemoteNG",
-      "tag": []
+      "uninstallCMD": [
+        "msiexec.exe",
+        "/qn",
+        "/x",
+        "{{.installer}}"
+      ],
+      "version": "1.76.20"
     },
     "mysql-workbench": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "msi",
-        "x86_64": "https://dev.mysql.com/get/Downloads/MySQLGUITools/mysql-workbench-community-8.0.41-winx64.msi"
+        "x86_64": "https://dev.mysql.com/get/Downloads/MySQLGUITools/mysql-workbench-community-8.0.46-winx64.msi"
       },
-      "version": "8.0.41",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "MySQL Workbench",
-      "tag": []
+      "uninstallCMD": [
+        "msiexec.exe",
+        "/qn",
+        "/x",
+        "{{.installer}}"
+      ],
+      "version": "8.0.46"
     },
     "nettime": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "innosetup",
         "x86": "http://www.timesynctool.com/NetTimeSetup-314.exe"
       },
-      "version": "3.14",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "NetTime",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "3.14"
     },
     "nircmd": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "zip",
         "options": {
@@ -1961,42 +2571,58 @@
         "x86": "https://nirsoft.net/utils/nircmd.zip",
         "x86_64": "https://nirsoft.net/utils/nircmd-x64.zip"
       },
-      "version": "latest",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "NirCmd",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "latest"
     },
     "node": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "msi",
-        "x86": "https://nodejs.org/dist/v23.9.0/node-v23.9.0-x64.msi",
+        "x86": "https://nodejs.org/dist/v25.7.0/node-v25.7.0-x64.msi",
         "x86_64": "https://nodejs.org/dist/v22.13.0/node-v22.13.0-x86.msi"
       },
-      "version": "23.9.0",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Node.js",
-      "tag": []
+      "uninstallCMD": [
+        "msiexec.exe",
+        "/qn",
+        "/x",
+        "{{.installer}}"
+      ],
+      "version": "25.7.0"
     },
     "node-lts": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "msi",
         "x86_64": "https://nodejs.org/dist/v22.13.0/node-v22.13.0-x86.msi"
       },
-      "version": "22.14.0",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Node.js LTS",
-      "tag": []
+      "uninstallCMD": [
+        "msiexec.exe",
+        "/qn",
+        "/x",
+        "{{.installer}}"
+      ],
+      "version": "24.14.0"
     },
     "nordvpn": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "custom",
         "options": {
@@ -2007,70 +2633,90 @@
         },
         "x86": "https://downloads.nordcdn.com/apps/windows/10/NordVPN/latest/NordVPNSetup.exe"
       },
-      "version": "latest",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "NordVPN",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/q"
+      ],
+      "version": "latest"
     },
     "nsis": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "nsis",
         "x86": "https://sourceforge.net/projects/nsis/files/NSIS%203/3.11/nsis-3.11-setup.exe/download"
       },
-      "version": "3.11",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "NSIS",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "3.11"
     },
     "obs-studio": {
+      "category": "desktop",
+      "icon": "https://obsproject.com/assets/images/new_icon_small-r.png",
       "installer": {
         "kind": "nsis",
         "x86": "https://github.com/obsproject/obs-studio/releases/download/27.2.4/OBS-Studio-27.2.4-Full-Installer-x86.exe",
-        "x86_64": "https://cdn-fastly.obsproject.com/downloads/OBS-Studio-31.0.2-Windows-Installer.exe"
+        "x86_64": "https://cdn-fastly.obsproject.com/downloads/OBS-Studio-32.0.4-Windows-Installer.exe"
       },
-      "version": "31.0.2",
-      "icon": "https://obsproject.com/assets/images/new_icon_small-r.png",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "OBS Studio",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "32.0.4"
     },
     "octave": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "nsis",
         "x86": "https://ftp.gnu.org/gnu/octave/windows/octave-8.3.0-w32-installer.exe",
         "x86_64": "https://ftp.gnu.org/gnu/octave/windows/octave-8.4.0-w64-installer.exe"
       },
-      "version": "8.3.0",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Octave",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "8.3.0"
     },
     "onlyoffice-desktopeditors": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "innosetup",
         "x86": "http://download.onlyoffice.com/install/desktop/editors/windows/distrib/onlyoffice/DesktopEditors_x86.exe",
         "x86_64": "http://download.onlyoffice.com/install/desktop/editors/windows/distrib/onlyoffice/DesktopEditors_x64.exe"
       },
-      "version": "latest",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "ONLYOFFICE Desktop Editors",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "latest"
     },
     "open-hardware-monitor": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "zip",
         "options": {
@@ -2078,15 +2724,19 @@
         },
         "x86": "https://openhardwaremonitor.org/files/openhardwaremonitor-v0.9.6.zip"
       },
-      "version": "0.9.6",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Open Hardware Monitor",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "0.9.6"
     },
     "openssh": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "custom",
         "options": {
@@ -2101,41 +2751,57 @@
         },
         "x86": "https://www.mls-software.com/files/setupssh-9.5p1-1.exe"
       },
-      "version": "9.5",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "OpenSSH",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/password=QBfLKlvUg3KTPr",
+        "/privsep=1",
+        "/serveronly=1",
+        "/NCRC",
+        "/S"
+      ],
+      "version": "9.5"
     },
     "openvpn-win10": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "nsis",
         "x86": "https://build.openvpn.net/downloads/releases/latest/openvpn-install-latest-stable-win10.exe"
       },
-      "version": "latest",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "OpenVPN for Windows 10",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "latest"
     },
     "openvpn-win7": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "nsis",
         "x86": "https://build.openvpn.net/downloads/releases/latest/openvpn-install-latest-stable-win7.exe"
       },
-      "version": "latest",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "OpenVPN for Windows 7",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "latest"
     },
     "opera": {
+      "category": "browsers",
+      "icon": "https://static.filehorse.com/icons/browsers-and-plugins/opera-icon-32.png",
       "installer": {
         "kind": "custom",
         "options": {
@@ -2150,30 +2816,41 @@
         },
         "x86": "https://net.geo.opera.com/opera/stable/windows"
       },
-      "version": "latest",
-      "icon": "https://static.filehorse.com/icons/browsers-and-plugins/opera-icon-32.png",
-      "rating": "4.0",
-      "category": "browsers",
       "licence": "Freeware",
-      "title": "Opera",
+      "rating": "4.0",
       "tag": [
         "featured"
-      ]
+      ],
+      "title": "Opera",
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/installer",
+        "/silent",
+        "/launchopera 0",
+        "/setdefault 0"
+      ],
+      "version": "latest"
     },
     "origin": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "innosetup",
         "x86": "https://eaassets-a.akamaihd.net/Origin-Client-Download/origin/live/OriginThinSetup.exe"
       },
-      "version": "latest",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Origin",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "latest"
     },
     "paint.net": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "custom",
         "options": {
@@ -2188,29 +2865,38 @@
         },
         "x86": "https://www.dotpdn.com/files/paint.net.5.1.2.install.zip"
       },
-      "version": "5.1.2",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Paint.NET",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/auto",
+        "/S"
+      ],
+      "version": "5.1.2"
     },
     "parsec": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "nsis",
         "x86": "https://s3.amazonaws.com/parsec-build/package/parsec-windows32.exe",
         "x86_64": "https://s3.amazonaws.com/parsec-build/package/parsec-windows.exe"
       },
-      "version": "latest",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Parsec",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "latest"
     },
     "pdf24": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "custom",
         "options": {
@@ -2227,29 +2913,45 @@
         },
         "x86": "https://www.pdf24.org/products/pdf-creator/download/pdf24-creator.msi"
       },
-      "version": "latest",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "PDF24",
-      "tag": []
+      "uninstallCMD": [
+        "msiexec.exe",
+        "/q",
+        "/i",
+        "{{.installer}}",
+        "ALLUSERS=1",
+        "REBOOT=ReallySuppress",
+        "DESKTOPICONS=No",
+        "FAXPRINTER=No"
+      ],
+      "version": "latest"
     },
     "perl": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "msi",
         "x86": "https://strawberryperl.com/download/5.32.1.1/strawberry-perl-5.32.1.1-32bit.msi",
         "x86_64": "https://github.com/StrawberryPerl/Perl-Dist-Strawberry/releases/download/SP_5380_5361/strawberry-perl-5.38.0.1-64bit.msi"
       },
-      "version": "5.32.1.1",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Perl",
-      "tag": []
+      "uninstallCMD": [
+        "msiexec.exe",
+        "/qn",
+        "/x",
+        "{{.installer}}"
+      ],
+      "version": "5.32.1.1"
     },
     "php": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "zip",
         "options": {
@@ -2259,18 +2961,22 @@
             "{{.SYSTEMDRIVE}}\\PHP\\php-win.exe"
           ]
         },
-        "x86": "https://windows.php.net/downloads/releases/php-8.3.17-nts-Win32-vs16-x86.zip",
-        "x86_64": "https://windows.php.net/downloads/releases/php-8.3.17-nts-Win32-vs16-x64.zip"
+        "x86": "https://windows.php.net/downloads/releases/php-8.3.29-nts-Win32-vs16-x86.zip",
+        "x86_64": "https://windows.php.net/downloads/releases/php-8.3.29-nts-Win32-vs16-x64.zip"
       },
-      "version": "8.4.4",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "PHP",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "8.5.1"
     },
     "physx": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "custom",
         "options": {
@@ -2281,28 +2987,37 @@
         },
         "x86": "http://us.download.nvidia.com/Windows/{{.version}}/PhysX-{{.version}}-SystemSoftware.exe"
       },
-      "version": "9.16.0318",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "PhysX",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "-s",
+        "/S"
+      ],
+      "version": "9.16.0318"
     },
     "pia": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "innosetup",
         "x86": "https://installers.privateinternetaccess.com/download/pia-v82-installer-win.exe"
       },
-      "version": "6",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Private Internet Access",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "6"
     },
     "plex-media-server": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "custom",
         "options": {
@@ -2312,17 +3027,22 @@
             "/norestart"
           ]
         },
-        "x86": "https://downloads.plex.tv/plex-media-server-new/1.41.4.9463-630c9f557/windows/PlexMediaServer-1.41.4.9463-630c9f557-x86.exe"
+        "x86": "https://downloads.plex.tv/plex-media-server-new/1.43.0.10492-121068a07/windows/PlexMediaServer-1.43.0.10492-121068a07-x86.exe"
       },
-      "version": "1.41.4.9463",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Plex Media Server",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/quiet",
+        "/norestart"
+      ],
+      "version": "1.43.0.10492"
     },
     "postman": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "squirrel",
         "options": {
@@ -2331,29 +3051,37 @@
         "x86": "https://dl.pstmn.io/download/latest/win32",
         "x86_64": "https://dl.pstmn.io/download/latest/win64"
       },
-      "version": "latest",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Postman",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "latest"
     },
     "potplayer": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "nsis",
         "x86": "https://t1.daumcdn.net/potplayer/PotPlayer/Version/Latest/PotPlayerSetup.exe",
         "x86_64": "https://t1.daumcdn.net/potplayer/PotPlayer/Version/Latest/PotPlayerSetup64.exe"
       },
-      "version": "latest",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "PotPlayer",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "latest"
     },
     "procmon": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "zip",
         "options": {
@@ -2361,42 +3089,56 @@
         },
         "x86": "https://download.sysinternals.com/files/ProcessMonitor.zip"
       },
-      "version": "latest",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Process Monitor",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "latest"
     },
     "putty": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "msi",
         "x86": "https://the.earth.li/~sgtatham/putty/latest/w32/putty-0.83-installer.msi",
         "x86_64": "https://the.earth.li/~sgtatham/putty/latest/w64/putty-64bit-0.83-installer.msi"
       },
-      "version": "0.83",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "PuTTY",
-      "tag": []
+      "uninstallCMD": [
+        "msiexec.exe",
+        "/qn",
+        "/x",
+        "{{.installer}}"
+      ],
+      "version": "0.83"
     },
     "pycharm-community": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "nsis",
-        "x86": "https://download.jetbrains.com/python/pycharm-community-2024.3.4.exe"
+        "x86": "https://download.jetbrains.com/python/pycharm-community-2025.2.6.exe"
       },
-      "version": "2024.3.4",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "PyCharm Community",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "2025.2.6"
     },
     "python2": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "msi",
         "options": {
@@ -2408,15 +3150,21 @@
         "x86": "https://www.python.org/ftp/python/2.7.18/python-2.7.18.msi",
         "x86_64": "https://www.python.org/ftp/python/2.7.18/python-2.7.18.amd64.msi"
       },
-      "version": "2.7.18",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Python 2",
-      "tag": []
+      "uninstallCMD": [
+        "msiexec.exe",
+        "/qn",
+        "/x",
+        "{{.installer}}"
+      ],
+      "version": "2.7.18"
     },
     "python3": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "custom",
         "options": {
@@ -2429,15 +3177,20 @@
         "x86": "https://www.python.org/ftp/python/3.13.2/python-3.13.2.exe",
         "x86_64": "https://www.python.org/ftp/python/3.13.2/python-3.13.2-amd64.exe"
       },
-      "version": "3.13.2",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Python 3",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/quiet",
+        "InstallAllUsers=1"
+      ],
+      "version": "3.13.2"
     },
     "python3-minimal": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "custom",
         "options": {
@@ -2451,47 +3204,61 @@
         "x86": "https://www.python.org/ftp/python/3.13.2/python-3.13.2.exe",
         "x86_64": "https://www.python.org/ftp/python/3.13.2/python-3.13.2-amd64.exe"
       },
-      "version": "3.13.2",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Python 3 Minimal",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/quiet",
+        "InstallAllUsers=1",
+        "Include_tcltk=0"
+      ],
+      "version": "3.13.2"
     },
     "qbittorrent": {
+      "category": "desktop",
+      "icon": "https://static.filehorse.com/icons/file-transfer-and-networking/qbittorrent-icon-32.png",
       "installer": {
         "kind": "nsis",
         "options": {
           "extension": ".exe"
         },
         "x86": "https://sourceforge.net/projects/qbittorrent/files/qbittorrent-win32/qbittorrent-4.4.5/qbittorrent_4.4.5_setup.exe/download",
-        "x86_64": "https://sourceforge.net/projects/qbittorrent/files/qbittorrent-win32/qbittorrent-5.0.4/qbittorrent_5.0.4_x64_setup.exe/download"
+        "x86_64": "https://sourceforge.net/projects/qbittorrent/files/qbittorrent-win32/qbittorrent-5.1.4/qbittorrent_5.1.4_x64_setup.exe/download"
       },
-      "version": "5.0.4",
-      "icon": "https://static.filehorse.com/icons/file-transfer-and-networking/qbittorrent-icon-32.png",
-      "rating": "5",
-      "category": "desktop",
       "licence": "Freeware",
-      "title": "qBittorrent",
+      "rating": "5",
       "tag": [
         "featured"
-      ]
+      ],
+      "title": "qBittorrent",
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "5.1.4"
     },
     "rapidee": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "innosetup",
         "x86": "http://www.rapidee.com/download/RapidEE_setup.exe"
       },
-      "version": "latest",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "RapidEE",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "latest"
     },
     "rclone": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "zip",
         "options": {
@@ -2500,29 +3267,37 @@
         "x86": "https://downloads.rclone.org/rclone-current-windows-386.zip",
         "x86_64": "https://downloads.rclone.org/rclone-current-windows-amd64.zip"
       },
-      "version": "latest",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Rclone",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "latest"
     },
     "rclone-browser": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "innosetup",
         "x86": "https://github.com/kapitainsky/RcloneBrowser/releases/download/{{.version}}/rclone-browser-{{.version}}-a0b66c6-windows-32-bit.exe",
         "x86_64": "https://github.com/kapitainsky/RcloneBrowser/releases/download/{{.version}}/rclone-browser-{{.version}}-a0b66c6-windows-64-bit.exe"
       },
-      "version": "1.8.0",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Rclone Browser",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "1.8.0"
     },
     "resilio-sync": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "custom",
         "options": {
@@ -2535,110 +3310,147 @@
         "x86": "https://download-cdn.resilio.com/stable/windows/Resilio-Sync.exe",
         "x86_64": "https://download-cdn.resilio.com/stable/windows64/Resilio-Sync_x64.exe"
       },
-      "version": "latest",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Resilio Sync",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/PERFORMINSTALL",
+        "/S"
+      ],
+      "version": "latest"
     },
     "resource-hacker": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "innosetup",
         "x86": "http://angusj.com/resourcehacker/reshacker_setup.exe"
       },
-      "version": "latest",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Resource Hacker",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "latest"
     },
     "retroarch": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "nsis",
-        "x86": "https://buildbot.libretro.com/stable/1.20.0/windows/x86/RetroArch-Win32-setup.exe",
-        "x86_64": "https://buildbot.libretro.com/stable/1.20.0/windows/x86_64/RetroArch-Win64-setup.exe"
+        "x86": "https://buildbot.libretro.com/stable/1.22.2/windows/x86/RetroArch-Win32-setup.exe",
+        "x86_64": "https://buildbot.libretro.com/stable/1.22.2/windows/x86_64/RetroArch-Win64-setup.exe"
       },
-      "version": "1.20.0",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "RetroArch",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "1.22.2"
     },
     "rufus": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "copy",
         "options": {
           "destination": "{{.PROGRAMFILES_X86}}\\Rufus\\rufus.exe"
         },
-        "x86": "https://github.com/pbatard/rufus/releases/download/v4.6/rufus-4.6.exe"
+        "x86": "https://github.com/pbatard/rufus/releases/download/v4.13/rufus-4.13.exe"
       },
-      "version": "4.6",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Rufus",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "4.13"
     },
     "sdm": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "msi",
         "x86": "https://e5.onthehub.com/Static/Installers/SDM_EN.msi"
       },
-      "version": "latest",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "SDM",
-      "tag": []
+      "uninstallCMD": [
+        "msiexec.exe",
+        "/qn",
+        "/x",
+        "{{.installer}}"
+      ],
+      "version": "latest"
     },
     "seafile-client": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "msi",
-        "x86": "https://s3.eu-central-1.amazonaws.com/download.seadrive.org/seafile-9.0.12-en.msi"
+        "x86": "https://sos-ch-dk-2.exo.io/seafile-downloads/seafile-9.0.16-en.msi"
       },
-      "version": "9.0.12",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Seafile Client",
-      "tag": []
+      "uninstallCMD": [
+        "msiexec.exe",
+        "/qn",
+        "/x",
+        "{{.installer}}"
+      ],
+      "version": "9.0.16"
     },
     "signal": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "nsis",
-        "x86": "https://updates.signal.org/desktop/signal-desktop-win-7.45.1.exe"
+        "x86": "https://updates.signal.org/desktop/signal-desktop-win-8.0.0.exe"
       },
-      "version": "7.45.1",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Signal",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "8.0.0"
     },
     "simplenote": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "nsis",
-        "x86": "https://github.com/Automattic/simplenote-electron/releases/download/v2.23.0/Simplenote-win-2.23.0.exe"
+        "x86": "https://github.com/Automattic/simplenote-electron/releases/download/v2.24.0/Simplenote-win-2.24.0.exe"
       },
-      "version": "2.23.0",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Simplenote",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "2.24.0"
     },
     "slack": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "squirrel",
         "options": {
@@ -2646,15 +3458,19 @@
         },
         "x86": "https://slack.com/ssb/download-win"
       },
-      "version": "latest",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Slack",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "latest"
     },
     "smplayer": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "nsis",
         "options": {
@@ -2663,96 +3479,128 @@
         "x86": "https://github.com/smplayer-dev/smplayer/releases/download/v24.5.0/smplayer-24.5.0-win32-qt5.6-unsigned.exe",
         "x86_64": "https://github.com/smplayer-dev/smplayer/releases/download/v24.5.0/smplayer-24.5.0-x64-unsigned.exe"
       },
-      "version": "24.5.0",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "SMPlayer",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "24.5.0"
     },
     "sourcetree": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "advancedinstaller",
-        "x86": "https://product-downloads.atlassian.com/software/sourcetree/windows/ga/SourceTreeSetup-3.4.22.exe"
+        "x86": "https://product-downloads.atlassian.com/software/sourcetree/windows/ga/SourceTreeSetup-3.4.29.exe"
       },
-      "version": "3.4.22",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "SourceTree",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "3.4.29"
     },
     "spice-guest-tools": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "nsis",
         "x86": "https://www.spice-space.org/download/windows/spice-guest-tools/spice-guest-tools-latest.exe"
       },
-      "version": "latest",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Spice Guest Tools",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "latest"
     },
     "spice-webdavd": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "msi",
         "x86": "https://www.spice-space.org/download/windows/spice-webdavd/spice-webdavd-x86-latest.msi",
         "x86_64": "https://www.spice-space.org/download/windows/spice-webdavd/spice-webdavd-x64-latest.msi"
       },
-      "version": "latest",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Spice WebDAV Daemon",
-      "tag": []
+      "uninstallCMD": [
+        "msiexec.exe",
+        "/qn",
+        "/x",
+        "{{.installer}}"
+      ],
+      "version": "latest"
     },
     "sshfs-win": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "msi",
         "x86": "https://github.com/billziss-gh/sshfs-win/releases/download/v3.5.20357/sshfs-win-3.5.20357-x86.msi",
         "x86_64": "https://github.com/billziss-gh/sshfs-win/releases/download/v3.5.20357/sshfs-win-3.5.20357-x64.msi"
       },
-      "version": "3.5.20357",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "SSHFS-Win",
-      "tag": []
+      "uninstallCMD": [
+        "msiexec.exe",
+        "/qn",
+        "/x",
+        "{{.installer}}"
+      ],
+      "version": "3.5.20357"
     },
     "steam": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "nsis",
         "x86": "https://steamcdn-a.akamaihd.net/client/installer/SteamSetup.exe"
       },
-      "version": "latest",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Steam",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "latest"
     },
     "sublime-text": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "innosetup",
         "x86": "https://download.sublimetext.com/Sublime%20Text%202.0.2a%20Setup.exe",
         "x86_64": "https://download.sublimetext.com/Sublime%20Text%202.0.2a%20x64%20Setup.exe"
       },
-      "version": "2.0.2",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Sublime Text",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "2.0.2"
     },
     "sublime-text-3": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "innosetup",
         "options": {
@@ -2763,15 +3611,19 @@
         "x86": "https://download.sublimetext.com/Sublime%20Text%20Build%203211%20Setup.exe",
         "x86_64": "https://download.sublimetext.com/Sublime%20Text%20Build%203211%20x64%20Setup.exe"
       },
-      "version": "3211",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Sublime Text 3",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "3211"
     },
     "sublime-text-dev": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "innosetup",
         "options": {
@@ -2782,15 +3634,19 @@
         "x86": "https://download.sublimetext.com/Sublime%20Text%20Build%203210%20Setup.exe",
         "x86_64": "https://download.sublimetext.com/Sublime%20Text%20Build%203210%20x64%20Setup.exe"
       },
-      "version": "3210",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Sublime Text Dev",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "3210"
     },
     "sumatrapdf": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "custom",
         "options": {
@@ -2803,15 +3659,20 @@
         "x86": "https://www.sumatrapdfreader.org/dl/rel/3.5.2/SumatraPDF-3.5.2-install.exe",
         "x86_64": "https://www.sumatrapdfreader.org/dl/rel/3.5.2/SumatraPDF-3.5.2-64-install.exe"
       },
-      "version": "3.5.2",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "SumatraPDF",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/install",
+        "/s"
+      ],
+      "version": "3.5.2"
     },
     "sysinternals": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "zip",
         "options": {
@@ -2819,42 +3680,54 @@
         },
         "x86": "https://download.sysinternals.com/files/SysinternalsSuite.zip"
       },
-      "version": "latest",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Sysinternals",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "latest"
     },
     "teamspeak": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "nsis",
         "x86": "https://files.teamspeak-services.com/releases/client/3.5.6/TeamSpeak3-Client-win64-3.5.6.exe",
         "x86_64": "https://files.teamspeak-services.com/pre_releases/client/5.0.0-beta77/teamspeak-client.msi"
       },
-      "version": "5.0.0-beta77",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "TeamSpeak",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "5.0.0-beta77"
     },
     "teamviewer": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "nsis",
         "x86": "https://download.teamviewer.com/download/TeamViewer_Setup.exe"
       },
-      "version": "latest",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "TeamViewer",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "latest"
     },
     "telegram": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "innosetup",
         "options": {
@@ -2862,102 +3735,136 @@
         },
         "x86": "https://telegram.org/dl/desktop/win"
       },
-      "version": "latest",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Telegram",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "latest"
     },
     "thunderbird": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "nsis",
         "options": {
           "extension": ".exe"
         },
-        "x86": "https://download.mozilla.org/?product=thunderbird-latest&os=win&lang=en-US",
-        "x86_64": "https://download.mozilla.org/?product=thunderbird-latest&os=win64&lang=en-US"
+        "x86": "https://download.mozilla.org/?product=thunderbird-latest\u0026os=win\u0026lang=en-US",
+        "x86_64": "https://download.mozilla.org/?product=thunderbird-latest\u0026os=win64\u0026lang=en-US"
       },
-      "version": "latest",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Thunderbird",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "latest"
     },
     "tightvnc": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "msi",
         "x86": "https://www.tightvnc.com/download/2.8.85/tightvnc-2.8.85-gpl-setup-32bit.msi",
         "x86_64": "https://www.tightvnc.com/download/2.8.85/tightvnc-2.8.85-gpl-setup-64bit.msi"
       },
-      "version": "2.8.85",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "TightVNC",
-      "tag": []
+      "uninstallCMD": [
+        "msiexec.exe",
+        "/qn",
+        "/x",
+        "{{.installer}}"
+      ],
+      "version": "2.8.85"
     },
     "tor-browser": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "nsis",
         "x86": "https://dist.torproject.org/torbrowser/14.0.3/tor-browser-windows-i686-portable-14.0.3.exe",
         "x86_64": "https://dist.torproject.org/torbrowser/14.0.3/tor-browser-windows-x86_64-portable-14.0.3.exe"
       },
-      "version": "14.0.3",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Tor Browser",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "14.0.3"
     },
     "torguard": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "nsis",
         "x86": "https://updates.torguard.biz/Software/Windows/torguard-setup-latest.exe",
         "x86_64": "https://updates.torguard.biz/Software/Windows/torguard-setup-latest.exe"
       },
-      "version": "latest",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "TorGuard",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "latest"
     },
     "tortoisegit": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "msi",
-        "x86": "https://download.tortoisegit.org/tgit/2.17.0.0/TortoiseGit-2.17.0.2-32bit.msi",
-        "x86_64": "https://download.tortoisegit.org/tgit/2.17.0.0/TortoiseGit-2.17.0.2-64bit.msi"
+        "x86": "https://download.tortoisegit.org/tgit/2.18.0.0/TortoiseGit-2.18.0.1-32bit.msi",
+        "x86_64": "https://download.tortoisegit.org/tgit/2.18.0.0/TortoiseGit-2.18.0.1-64bit.msi"
       },
-      "version": "2.17.0.2",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "TortoiseGit",
-      "tag": []
+      "uninstallCMD": [
+        "msiexec.exe",
+        "/qn",
+        "/x",
+        "{{.installer}}"
+      ],
+      "version": "2.18.0.1"
     },
     "transmission": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "msi",
         "x86": "https://github.com/transmission/transmission/releases/download/4.0.6/transmission-4.0.6-x86.msi",
         "x86_64": "https://github.com/transmission/transmission/releases/download/4.0.6/transmission-4.0.6-x64.msi"
       },
-      "version": "4.0.6",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Transmission",
-      "tag": []
+      "uninstallCMD": [
+        "msiexec.exe",
+        "/qn",
+        "/x",
+        "{{.installer}}"
+      ],
+      "version": "4.0.6"
     },
     "ubisoft-connect": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "nsis",
         "options": {
@@ -2965,29 +3872,39 @@
         },
         "x86": "https://ubistatic3-a.akamaihd.net/orbit/launcher_installer/UbisoftConnectInstaller.exe"
       },
-      "version": "latest",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Ubisoft Connect",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "latest"
     },
     "vagrant": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "msi",
-        "x86": "https://releases.hashicorp.com/vagrant/2.4.3/vagrant_2.4.3_i686.msi",
-        "x86_64": "https://releases.hashicorp.com/vagrant/2.4.3/vagrant_2.4.3_x86_64.msi"
+        "x86": "https://releases.hashicorp.com/vagrant/2.4.9/vagrant_2.4.9_windows_i686.msi",
+        "x86_64": "https://releases.hashicorp.com/vagrant/2.4.9/vagrant_2.4.9_windows_amd64.msi"
       },
-      "version": "2.4.3",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Vagrant",
-      "tag": []
+      "uninstallCMD": [
+        "msiexec.exe",
+        "/qn",
+        "/x",
+        "{{.installer}}"
+      ],
+      "version": "2.4.9"
     },
     "vcredist-2005": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "custom",
         "options": {
@@ -2999,15 +3916,19 @@
         "x86": "https://download.microsoft.com/download/8/B/4/8B42259F-5D70-43F4-AC2E-4B208FD8D66A/vcredist_x86.EXE",
         "x86_64": "https://download.microsoft.com/download/8/B/4/8B42259F-5D70-43F4-AC2E-4B208FD8D66A/vcredist_x64.EXE"
       },
-      "version": "8.0.61000",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Visual C++ Redistributable 2005",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/q"
+      ],
+      "version": "8.0.61000"
     },
     "vcredist-2008": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "custom",
         "options": {
@@ -3019,15 +3940,19 @@
         "x86": "https://download.microsoft.com/download/5/D/8/5D8C65CB-C849-4025-8E95-C3966CAFD8AE/vcredist_x86.exe",
         "x86_64": "https://download.microsoft.com/download/5/D/8/5D8C65CB-C849-4025-8E95-C3966CAFD8AE/vcredist_x64.exe"
       },
-      "version": "9.0.30729.6161",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Visual C++ Redistributable 2008",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/qb"
+      ],
+      "version": "9.0.30729.6161"
     },
     "vcredist-2010": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "custom",
         "options": {
@@ -3040,15 +3965,21 @@
         "x86": "https://download.microsoft.com/download/1/6/5/165255E7-1014-4D0A-B094-B6A430A6BFFC/vcredist_x86.exe",
         "x86_64": "https://download.microsoft.com/download/1/6/5/165255E7-1014-4D0A-B094-B6A430A6BFFC/vcredist_x64.exe"
       },
-      "version": "10.0.40219.325",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Visual C++ Redistributable 2010",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/passive",
+        "/norestart",
+        "/S"
+      ],
+      "version": "10.0.40219.325"
     },
     "vcredist-2012": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "custom",
         "options": {
@@ -3061,15 +3992,21 @@
         "x86": "https://download.microsoft.com/download/1/6/B/16B06F60-3B20-4FF2-B699-5E9B7962F9AE/VSU_4/vcredist_x86.exe",
         "x86_64": "https://download.microsoft.com/download/1/6/B/16B06F60-3B20-4FF2-B699-5E9B7962F9AE/VSU_4/vcredist_x64.exe"
       },
-      "version": "11.0.61030",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Visual C++ Redistributable 2012",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/passive",
+        "/norestart",
+        "/S"
+      ],
+      "version": "11.0.61030"
     },
     "vcredist-2013": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "custom",
         "options": {
@@ -3095,15 +4032,19 @@
         "x86": "https://aka.ms/highdpimfc2013x86enu",
         "x86_64": "https://aka.ms/highdpimfc2013x64enu"
       },
-      "version": "12.0.40664.0",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Visual C++ Redistributable 2013",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "12.0.40664.0"
     },
     "vcredist-2015": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "custom",
         "options": {
@@ -3117,15 +4058,22 @@
         "x86": "https://download.microsoft.com/download/6/A/A/6AA4EDFF-645B-48C5-81CC-ED5963AEAD48/vc_redist.x86.exe",
         "x86_64": "https://download.microsoft.com/download/6/A/A/6AA4EDFF-645B-48C5-81CC-ED5963AEAD48/vc_redist.x64.exe"
       },
-      "version": "14.0.24215.0",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Visual C++ Redistributable 2015",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/install",
+        "/passive",
+        "/norestart",
+        "/S"
+      ],
+      "version": "14.0.24215.0"
     },
     "vcredist-2017": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "custom",
         "options": {
@@ -3139,15 +4087,22 @@
         "x86": "https://aka.ms/vs/15/release/vc_redist.x86.exe",
         "x86_64": "https://aka.ms/vs/15/release/vc_redist.x64.exe"
       },
-      "version": "14.16.27024.1",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Visual C++ Redistributable 2017",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/install",
+        "/passive",
+        "/norestart",
+        "/S"
+      ],
+      "version": "14.16.27024.1"
     },
     "vcredist-2019": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "custom",
         "options": {
@@ -3161,15 +4116,21 @@
         "x86": "https://aka.ms/vs/16/release/vc_redist.x86.exe",
         "x86_64": "https://aka.ms/vs/16/release/vc_redist.x64.exe"
       },
-      "version": "latest",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Visual C++ Redistributable 2019",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/install",
+        "/quiet",
+        "/norestart"
+      ],
+      "version": "latest"
     },
     "virtualbox": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "custom",
         "options": {
@@ -3182,30 +4143,38 @@
             "{{.PROGRAMFILES}}\\Oracle\\VirtualBox\\VBoxManage.exe"
           ]
         },
-        "x86": "https://download.virtualbox.org/virtualbox/7.1.6/VirtualBox-7.1.6-167084-Win.exe"
+        "x86": "https://download.virtualbox.org/virtualbox/7.2.6/VirtualBox-7.2.6a-172322-Win.exe"
       },
-      "version": "7.1.6",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "VirtualBox",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "--silent"
+      ],
+      "version": "7.2.6"
     },
     "viscosity": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "innosetup",
         "x86": "https://www.sparklabs.com/downloads/Viscosity%20Installer.exe"
       },
-      "version": "latest",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Viscosity",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "latest"
     },
     "visual-studio-code": {
+      "category": "developer",
+      "icon": "https://static.filehorse.com/icons/developer-tools/visual-studio-code-icon-32.png",
       "installer": {
         "kind": "custom",
         "options": {
@@ -3221,17 +4190,24 @@
         "x86": "https://go.microsoft.com/fwlink/?LinkID=623230",
         "x86_64": "https://go.microsoft.com/fwlink/?Linkid=852157"
       },
-      "version": "latest",
-      "icon": "https://static.filehorse.com/icons/developer-tools/visual-studio-code-icon-32.png",
-      "rating": "5",
-      "category": "developer",
       "licence": "Freeware",
-      "title": "Visual Studio Code",
+      "rating": "5",
       "tag": [
         "featured"
-      ]
+      ],
+      "title": "Visual Studio Code",
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/norestart",
+        "/sp-",
+        "/verysilent",
+        "/mergetasks=!runcode"
+      ],
+      "version": "latest"
     },
     "visual-studio-community-2017": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "custom",
         "options": {
@@ -3245,15 +4221,21 @@
         },
         "x86": "https://aka.ms/vs/15/release/vs_community.exe"
       },
-      "version": "latest",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Visual Studio Community 2017",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "--quiet",
+        "--norestart",
+        "--wait"
+      ],
+      "version": "latest"
     },
     "visual-studio-community-2019": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "custom",
         "options": {
@@ -3267,15 +4249,21 @@
         },
         "x86": "https://aka.ms/vs/16/release/vs_community.exe"
       },
-      "version": "latest",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Visual Studio Community 2019",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "--quiet",
+        "--norestart",
+        "--wait"
+      ],
+      "version": "latest"
     },
     "visual-studio-enterprise-2017": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "custom",
         "options": {
@@ -3289,15 +4277,21 @@
         },
         "x86": "https://aka.ms/vs/15/release/vs_enterprise.exe"
       },
-      "version": "latest",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Visual Studio Enterprise 2017",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "--quiet",
+        "--norestart",
+        "--wait"
+      ],
+      "version": "latest"
     },
     "visual-studio-enterprise-2019": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "custom",
         "options": {
@@ -3311,15 +4305,21 @@
         },
         "x86": "https://aka.ms/vs/16/release/vs_enterprise.exe"
       },
-      "version": "latest",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Visual Studio Enterprise 2019",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "--quiet",
+        "--norestart",
+        "--wait"
+      ],
+      "version": "latest"
     },
     "visual-studio-professional-2017": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "custom",
         "options": {
@@ -3333,15 +4333,21 @@
         },
         "x86": "https://aka.ms/vs/15/release/vs_professional.exe"
       },
-      "version": "latest",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Visual Studio Professional 2017",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "--quiet",
+        "--norestart",
+        "--wait"
+      ],
+      "version": "latest"
     },
     "visual-studio-professional-2019": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "custom",
         "options": {
@@ -3355,15 +4361,21 @@
         },
         "x86": "https://aka.ms/vs/16/release/vs_professional.exe"
       },
-      "version": "latest",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Visual Studio Professional 2019",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "--quiet",
+        "--norestart",
+        "--wait"
+      ],
+      "version": "latest"
     },
     "visual-studio-vctools-2019": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "custom",
         "options": {
@@ -3380,15 +4392,24 @@
         },
         "x86": "https://aka.ms/vs/16/release/vs_BuildTools.exe"
       },
-      "version": "latest",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Visual Studio VC Tools 2019",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "--add",
+        "Microsoft.VisualStudio.Workload.VCTools",
+        "--includeRecommended",
+        "--quiet",
+        "--norestart",
+        "--wait"
+      ],
+      "version": "latest"
     },
     "vivaldi": {
+      "category": "browsers",
+      "icon": "https://static.filehorse.com/icons/browsers-and-plugins/vivaldi-icon-32.png",
       "installer": {
         "kind": "custom",
         "options": {
@@ -3399,18 +4420,25 @@
             "--vivaldi-update"
           ]
         },
-        "x86": "https://downloads.vivaldi.com/stable/Vivaldi.7.1.3570.58.arm64.exe",
-        "x86_64": "https://downloads.vivaldi.com/stable/Vivaldi.7.1.3570.58.x64.exe"
+        "x86": "https://downloads.vivaldi.com/stable/Vivaldi.7.8.3925.74.arm64.exe",
+        "x86_64": "https://downloads.vivaldi.com/stable/Vivaldi.7.8.3925.74.x64.exe"
       },
-      "version": "7.1.3570.58",
-      "icon": "https://static.filehorse.com/icons/browsers-and-plugins/vivaldi-icon-32.png",
-      "rating": "4.0",
-      "category": "browsers",
       "licence": "Open Source",
+      "rating": "4.0",
+      "tag": [],
       "title": "Vivaldi",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "--vivaldi-silent",
+        "--do-not-launch-chrome",
+        "--vivaldi-update",
+        "/S"
+      ],
+      "version": "7.8.3925.74"
     },
     "vlc": {
+      "category": "multimedia",
+      "icon": "https://static.filehorse.com/icons/video-software/vlc-icon-32.png",
       "installer": {
         "kind": "custom",
         "options": {
@@ -3420,99 +4448,129 @@
             "/S"
           ]
         },
-        "x86": "https://download.videolan.org/pub/videolan/vlc/last/win32/vlc-3.0.21-win32.exe",
-        "x86_64": "https://download.videolan.org/pub/videolan/vlc/last/win64/vlc-3.0.21-win64.exe"
+        "x86": "https://download.videolan.org/pub/videolan/vlc/last/win32/vlc-3.0.23-win32.exe",
+        "x86_64": "https://download.videolan.org/pub/videolan/vlc/last/win64/vlc-3.0.23-win64.exe"
       },
-      "version": "3.0.21",
-      "icon": "https://static.filehorse.com/icons/video-software/vlc-icon-32.png",
-      "rating": "5",
-      "category": "multimedia",
       "licence": "Open source",
-      "title": "VLC",
+      "rating": "5",
       "tag": [
         "featured"
-      ]
+      ],
+      "title": "VLC",
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/allusers",
+        "/S"
+      ],
+      "version": "3.0.23"
     },
     "voicemeeter": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "as-is",
         "x86": "https://download.vb-audio.com/Download_CABLE/VoicemeeterSetup.exe"
       },
-      "version": "latest",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Voicemeeter",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "latest"
     },
     "voicemeeter-banana": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "as-is",
         "x86": "https://download.vb-audio.com/Download_CABLE/VoicemeeterProSetup.exe"
       },
-      "version": "latest",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Voicemeeter Banana",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "latest"
     },
     "webtorrent": {
+      "category": "desktop",
+      "icon": "https://webtorrent.io/img/webtorrent-small.png",
       "installer": {
         "kind": "squirrel",
         "x86": "https://github.com/webtorrent/webtorrent-desktop/releases/download/v0.24.0/WebTorrentSetup-v0.24.0.exe"
       },
-      "version": "0.24.0",
-      "icon": "https://webtorrent.io/img/webtorrent-small.png",
-      "rating": "3.3",
-      "category": "desktop",
       "licence": "Open Source",
+      "rating": "3.3",
+      "tag": [],
       "title": "WebTorrent",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "0.24.0"
     },
     "whatsapp": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "squirrel",
         "x86": "https://web.whatsapp.com/desktop/windows/release/ia32/WhatsAppSetup.exe",
         "x86_64": "https://web.whatsapp.com/desktop/windows/release/x64/WhatsAppSetup.exe"
       },
-      "version": "latest",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "WhatsApp",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "latest"
     },
     "windirstat": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "nsis",
         "x86": "https://sourceforge.net/projects/windirstat/files/windirstat/1.1.2%20installer%20re-release%20%28more%20languages%21%29/windirstat1_1_2_setup.exe/download"
       },
-      "version": "latest",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "WinDirStat",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "latest"
     },
     "windows-terminal": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "appx",
-        "x86": "https://github.com/microsoft/terminal/releases/download/v1.22.10352.0/Microsoft.WindowsTerminal_1.22.10352.0_8wekyb3d8bbwe.msixbundle"
+        "x86": "https://github.com/microsoft/terminal/releases/download/v1.23.20211.0/Microsoft.WindowsTerminal_1.23.20211.0_8wekyb3d8bbwe.msixbundle"
       },
-      "version": "1.22.10352.0",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Windows Terminal",
-      "tag": []
+      "uninstallCMD": [
+        "powershell.exe",
+        "-Command",
+        "Get-AppxPackage -Name \"{{.title}}\" | Remove-AppxPackage"
+      ],
+      "version": "1.23.20211.0"
     },
     "winrar": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "custom",
         "options": {
@@ -3521,47 +4579,59 @@
             "/S"
           ]
         },
-        "x86_64": "https://rarlab.com/rar/winrar-x64-710.exe"
+        "x86_64": "https://rarlab.com/rar/winrar-x64-720.exe"
       },
-      "version": "7.10",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "WinRAR",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "7.20"
     },
     "winscp": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "innosetup",
         "options": {
           "extension": ".exe"
         },
-        "x86": "https://sourceforge.net/projects/winscp/files/WinSCP/6.3.7/WinSCP-6.3.7-Setup.exe/download"
+        "x86": "https://sourceforge.net/projects/winscp/files/WinSCP/6.5.5/WinSCP-6.5.5-Setup.exe/download"
       },
-      "version": "6.3.7",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "WinSCP",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "6.5.5"
     },
     "wireshark": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "nsis",
         "x86": "https://www.wireshark.org/download/win32/all-versions/Wireshark-win32-3.6.24.msi",
-        "x86_64": "https://www.wireshark.org/download/win64/Wireshark-4.4.5-x64.msi"
+        "x86_64": "https://www.wireshark.org/download/win64/Wireshark-4.6.4-x64.msi"
       },
-      "version": "4.4.5",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Wireshark",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "4.6.4"
     },
     "wix": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "custom",
         "options": {
@@ -3590,15 +4660,21 @@
         },
         "x86": "https://github.com/wixtoolset/wix3/releases/download/wix3111rtm/wix311.exe"
       },
-      "version": "3.11.1",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "WiX Toolset",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "-norestart",
+        "-quiet",
+        "/S"
+      ],
+      "version": "3.11.1"
     },
     "wpd": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "zip",
         "options": {
@@ -3606,15 +4682,19 @@
         },
         "x86": "https://wpd.app/get/latest.zip"
       },
-      "version": "latest",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "WPD",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "latest"
     },
     "yarn": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "msi",
         "options": {
@@ -3622,15 +4702,21 @@
         },
         "x86": "https://yarnpkg.com/latest.msi"
       },
-      "version": "latest",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "Yarn",
-      "tag": []
+      "uninstallCMD": [
+        "msiexec.exe",
+        "/qn",
+        "/x",
+        "{{.installer}}"
+      ],
+      "version": "latest"
     },
     "yatqa": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "nsis",
         "options": {
@@ -3638,15 +4724,19 @@
         },
         "x86": "https://dl.yat.qa/stable/"
       },
-      "version": "latest",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "YATQA",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "latest"
     },
     "youtube-dl": {
+      "category": "desktop",
+      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
       "installer": {
         "kind": "copy",
         "options": {
@@ -3657,13 +4747,16 @@
         },
         "x86": "https://youtube-dl.org/downloads/latest/youtube-dl.exe"
       },
-      "version": "latest",
-      "icon": "https://github.com/appfinder/appfinder.github.io/blob/main/assets/dist/icon.png?raw=true",
-      "rating": "4",
-      "category": "desktop",
       "licence": "Freeware",
+      "rating": "4",
+      "tag": [],
       "title": "youtube-dl",
-      "tag": []
+      "uninstallCMD": [
+        "{{.installer}}",
+        "/S"
+      ],
+      "version": "latest"
     }
-  }
+  },
+  "version": 4
 }
