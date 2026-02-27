@@ -19,7 +19,7 @@
       "tag": [],
       "title": "1Password",
       "uninstallCMD": [
-        "%LocalAppData%\\1Password\\app\\8\\1Password.exe",
+        "%LocalAppData%\\1Password\\app\\7\\1Password.exe",
         "--uninstall"
       ],
       "version": "7.9.835"
